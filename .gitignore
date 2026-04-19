@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets
+.env
+.env.local
+*.key
+secrets/
+
+# Build / output
+dist/
+build/
+*.egg
+.coverage
+
+# Eval artefacts (generated per run)
+evals/runs/
+evals/latest-report.md
+
+# Temp
+*.tmp
+*.log

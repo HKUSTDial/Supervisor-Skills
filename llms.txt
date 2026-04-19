@@ -1,0 +1,40 @@
+# Supervisor-Skills
+
+> A PhD-level academic research methodology distilled into seven structured skills, covering the full paper lifecycle (idea evaluation, introduction drafting, technical paper structuring, benchmark paper structuring, figure design, pre-submission review, AI-assisted research workflow). Usable as a standalone Chinese curriculum or as structured skills installable into any MCP-aware AI assistant.
+
+Target audience: researchers writing papers for NeurIPS, ICML, ICLR, VLDB, SIGMOD, KDD, ACL, EMNLP, CVPR, and similar top venues.
+
+## Install
+
+Paste the following prompt into any MCP-aware AI assistant:
+
+```
+Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with MCP and Skills.
+```
+
+See [README.md](README.md) (Chinese) or [README.en.md](README.en.md) for full details.
+
+## Skills (v1.0.0)
+
+Seven anchor skills under `plugins/phd-research/skills/` cover the full paper lifecycle.
+
+- [idea-evaluator](plugins/phd-research/skills/idea-evaluator/SKILL.md): scores a research idea on the five-dimension framework (Higher / Faster / Stronger / Cheaper / Broader) plus lifecycle-capability matching, fatal-flaws audit, and paradigm-shift probe.
+- [vibe-research-workflow](plugins/phd-research/skills/vibe-research-workflow/SKILL.md): Vibe Coding, Vibe Figure, Vibe Writing tool choice and six behavioral rules for AI-assisted research.
+- [intro-drafter](plugins/phd-research/skills/intro-drafter/SKILL.md): six-paragraph Introduction outline from a structured flowchart.
+- [tech-paper-template](plugins/phd-research/skills/tech-paper-template/SKILL.md): technical-paper thinking table with four self-consistency checks and Technique vs New Problem positioning.
+- [benchmark-paper-template](plugins/phd-research/skills/benchmark-paper-template/SKILL.md): benchmark-paper five-pillar audit, six-part Introduction logic chain, Section 2-7 skeleton, and pre-submission checklist.
+- [figure-designer](plugins/phd-research/skills/figure-designer/SKILL.md): paradigm selection and quality audit for motivated-example, solution-overview, and experimental-results figures.
+- [pre-submission-reviewer](plugins/phd-research/skills/pre-submission-reviewer/SKILL.md): five-dimension reviewer self-check covering macro logic, writing detail, grammar, LaTeX format, and figure quality.
+
+## Supporting documentation
+
+- [Chinese reader guide](docs/zh/README.md): complete Chinese curriculum.
+- [English reader guide](docs/en/README.md): English mirror of the curriculum.
+- [Preserved source](archive/v1-source/): original Chinese-language curriculum, verbatim.
+- [Contributing guide](CONTRIBUTING.md): how to contribute.
+- [Changelog](CHANGELOG.md): version history.
+- [License](LICENSE): CC BY 4.0.
+
+## Case studies
+
+Alpha-SQL (ICML 2025), AFlow (ICLR 2025), LEAD (VLDB 2026) Introduction analyses are in [archive/v1-source/1_Guide/06_Case_Studies/](archive/v1-source/1_Guide/06_Case_Studies/).
