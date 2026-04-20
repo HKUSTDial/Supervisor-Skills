@@ -70,7 +70,7 @@ Supervisor-Skills/
 └── assets/images/                     # 图片资源
 ```
 
-### 📖 handbook：科研与写作系统指南
+### 📖 Handbook：科研与写作系统指南
 
 > **📄 配套讲义**：[博士生科研入门辅导.pdf](handbook/01_Preliminary/博士生科研入门辅导.pdf) — 本指南的配套 PDF 讲义，适合打印或在 iPad 上阅读，包含完整的科研入门思路框架。
 
