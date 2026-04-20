@@ -1,6 +1,6 @@
 # Supervisor-Skills
 
-> A PhD-level academic research methodology distilled into seven structured skills, covering the full paper lifecycle (idea evaluation, introduction drafting, technical paper structuring, benchmark paper structuring, figure design, pre-submission review, AI-assisted research workflow). Usable as a standalone Chinese curriculum or as structured skills installable into any MCP-aware AI assistant.
+> A PhD-level academic research methodology distilled into seven structured skills, covering the full paper lifecycle (idea evaluation, introduction drafting, technical paper structuring, benchmark paper structuring, figure design, pre-submission review, AI-assisted research workflow). Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `docs/en/handbook/`, or as MCP-installable plugin skills under `plugins/phd-research/skills/`.
 
 Target audience: researchers writing papers for NeurIPS, ICML, ICLR, VLDB, SIGMOD, KDD, ACL, EMNLP, CVPR, and similar top venues.
 
@@ -14,7 +14,7 @@ Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-S
 
 See [README.md](README.md) (Chinese) or [README.en.md](README.en.md) for full details.
 
-## Skills (v1.0.0)
+## Skills (v2.0.0)
 
 Seven anchor skills under `plugins/phd-research/skills/` cover the full paper lifecycle.
 
@@ -26,15 +26,19 @@ Seven anchor skills under `plugins/phd-research/skills/` cover the full paper li
 - [figure-designer](plugins/phd-research/skills/figure-designer/SKILL.md): paradigm selection and quality audit for motivated-example, solution-overview, and experimental-results figures.
 - [pre-submission-reviewer](plugins/phd-research/skills/pre-submission-reviewer/SKILL.md): five-dimension reviewer self-check covering macro logic, writing detail, grammar, LaTeX format, and figure quality.
 
+## Reader curriculum
+
+The original Chinese curriculum by the methodology author lives at `handbook/`. An English mirror lives at `docs/en/handbook/`. Both are organized into six chapters.
+
+- `handbook/01_Preliminary/` — evaluating paper quality from a reviewer's perspective.
+- `handbook/02_Idea_Generation/` — idea lifecycle, five-dimension thinking, disruptive innovation.
+- `handbook/03_Paper_Writing/` — paper lifecycle, Introduction flowchart, technical and benchmark templates, writing checklist.
+- `handbook/04_Scientific_Plotting/` — motivated, overview, experimental figures and a drawing checklist.
+- `handbook/05_Vibe_Research/` — AI-assisted research workflow and practitioner notes.
+- `handbook/06_Case_Studies/` — Alpha-SQL (ICML 2025), AFlow (ICLR 2025), LEAD (VLDB 2026) Introduction analyses.
+
 ## Supporting documentation
 
-- [Chinese reader guide](docs/zh/README.md): complete Chinese curriculum.
-- [English reader guide](docs/en/README.md): English mirror of the curriculum.
-- [Preserved source](archive/v1-source/): original Chinese-language curriculum, verbatim.
 - [Contributing guide](CONTRIBUTING.md): how to contribute.
 - [Changelog](CHANGELOG.md): version history.
-- [License](LICENSE): CC BY 4.0.
-
-## Case studies
-
-Alpha-SQL (ICML 2025), AFlow (ICLR 2025), LEAD (VLDB 2026) Introduction analyses are in [archive/v1-source/1_Guide/06_Case_Studies/](archive/v1-source/1_Guide/06_Case_Studies/).
+- [License](LICENSE): CC BY-NC-SA 4.0.

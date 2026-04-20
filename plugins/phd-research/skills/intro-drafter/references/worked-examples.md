@@ -14,7 +14,7 @@ Each example below reverse-engineers a published Introduction into
 the six-paragraph outline this skill produces. The outlines are
 faithful to the published papers, with some writing points
 paraphrased. Sources are
-`archive/v1-source/1_Guide/06_Case_Studies/6.1`, `6.2`, and
+`handbook/06_Case_Studies/6.1`, `6.2`, and
 `6.3`.
 
 The purpose is to show the outline at the level of detail this skill

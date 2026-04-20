@@ -7,7 +7,7 @@ This repository welcomes issues, pull requests, and discussions. Please read thi
 The v1.0 skill set contains seven anchor skills under `plugins/phd-research/skills/`: `idea-evaluator`, `vibe-research-workflow`, `intro-drafter`, `tech-paper-template`, `benchmark-paper-template`, `figure-designer`, `pre-submission-reviewer`. Adding a new skill requires:
 
 1. Discussion via issue first; confirm the skill fills a real gap and is not covered by an existing skill.
-2. Clear attribution for any content not derived from `archive/v1-source/`.
+2. Clear attribution for any content not derived from `handbook/`.
 3. Adherence to the SKILL.md conventions below.
 
 ## Authoring a skill
@@ -23,7 +23,7 @@ Each skill directory at `plugins/phd-research/skills/<name>/` contains:
 - SKILL.md body under 500 lines.
 - `description` between 40 and 80 words, written in third person, contains at least one "Use when..." clause.
 - No em-dash (U+2014) in `SKILL.md` or `references/*.md`; use commas or periods.
-- No Chinese characters in SKILL.md (bilingual content lives in `docs/zh/`).
+- No Chinese characters in SKILL.md (the canonical Chinese curriculum lives at `handbook/`; English mirror at `docs/en/handbook/`).
 - All `See: references/X.md` pointers must resolve to existing files.
 - No nested references (`SKILL.md -> refs/a.md -> refs/b.md` is illegal).
 - Commits must not contain "Claude", "Co-Authored-By: Claude", or Anthropic attribution.
@@ -38,11 +38,11 @@ The linter exits non-zero on any violation and is invoked by `.github/workflows/
 
 ## Bilingual content
 
-Canonical `docs/en/` is authored first; `docs/zh/` mirrors the structure and content. CI blocks merges that leave the two trees asymmetric.
+The Chinese `handbook/` is the canonical curriculum, preserved verbatim from the methodology author. The `docs/en/handbook/` directory is a faithful English mirror and follows the same chapter and file structure. Keep the two trees symmetric in any PR that edits the curriculum.
 
 ## License
 
-All contributions are licensed under CC BY 4.0. By submitting a PR you agree to license your contribution under these terms and to provide attribution consistent with the original repository's convention.
+All contributions are licensed under CC BY-NC-SA 4.0. By submitting a PR you agree to license your contribution under these terms and to provide attribution consistent with the original repository's convention.
 
 ## Commit conventions
 

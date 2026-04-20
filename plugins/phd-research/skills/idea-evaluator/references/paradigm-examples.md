@@ -19,7 +19,7 @@ show what a disruptive reframing looks like in the wild and to
 calibrate the scout skill's output against real precedents.
 
 Examples 2, 3, and 4 appear in
-`archive/v1-source/1_Guide/02_Idea_Generation/2.3` as
+`handbook/02_Idea_Generation/2.3` as
 illustrations for the principle they anchor.
 
 ## 2. Example 1: Transformer architecture

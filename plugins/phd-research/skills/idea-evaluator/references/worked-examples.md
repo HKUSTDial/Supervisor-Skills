@@ -17,9 +17,9 @@ ground the scoring rubric and the paradigm-shift probe in concrete
 work. They are not predictions; the papers are already published and
 accepted at their venues.
 
-Sources: `archive/v1-source/1_Guide/06_Case_Studies/6.1_ICML_2025_Alpha-SQL*.md`,
-`archive/v1-source/1_Guide/06_Case_Studies/6.2_ICLR_2025_AFlow*.md`,
-`archive/v1-source/1_Guide/06_Case_Studies/6.3_VLDB_2026_LEAD*.md`.
+Sources: `handbook/06_Case_Studies/6.1_ICML_2025_Alpha-SQL*.md`,
+`handbook/06_Case_Studies/6.2_ICLR_2025_AFlow*.md`,
+`handbook/06_Case_Studies/6.3_VLDB_2026_LEAD*.md`.
 
 ## 2. Example A: Alpha-SQL (ICML 2025), incremental, Strong Accept
 

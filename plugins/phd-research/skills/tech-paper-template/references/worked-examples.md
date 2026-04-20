@@ -13,7 +13,7 @@
 Each example below is a retrospective filling of the thinking
 template for a published paper. Ratings reflect what a strong
 pre-submission filling looks like. Sources are
-`archive/v1-source/1_Guide/06_Case_Studies/6.1`, `6.2`, and
+`handbook/06_Case_Studies/6.1`, `6.2`, and
 `6.3`.
 
 ## 2. Example A: Alpha-SQL, Technique
