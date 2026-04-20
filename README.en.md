@@ -128,7 +128,7 @@ Contact: Yuyu Luo (yuyuluo [AT] hkust-gz.edu.cn).
 
 ##
 
-Thanks to [Boyan Li](https://liboyan.vip/), [Yin Wu](https://openreview.net/profile?id=%7EYin_WU2), and [Yupeng Xie](https://xypkent.github.io/) for helping compile this repository and for their invaluable suggestions.
+Thanks to [Yin Wu](https://openreview.net/profile?id=%7EYin_WU2), [Boyan Li](https://liboyan.vip/), and [Yupeng Xie](https://xypkent.github.io/) for helping compile this repository and for their invaluable suggestions.
 
 ## TODO
 **Guide**

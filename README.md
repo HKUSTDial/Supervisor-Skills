@@ -123,7 +123,7 @@ Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-S
 
 ##
 
-感谢[李伯岩](https://liboyan.vip/)、[吴垠](https://openreview.net/profile?id=%7EYin_WU2)、[谢宇鹏](https://xypkent.github.io/)协助整理该仓库并提供宝贵的建议！
+感谢[吴垠](https://openreview.net/profile?id=%7EYin_WU2)、[李伯岩](https://liboyan.vip/)、[谢宇鹏](https://xypkent.github.io/)协助整理该仓库并提供宝贵的建议！
 
 ## TODO
 **Guide**
