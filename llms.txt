@@ -1,15 +1,15 @@
 # Supervisor-Skills
 
-> A PhD-level academic research methodology distilled into seven structured skills, covering the full paper lifecycle (idea evaluation, introduction drafting, technical paper structuring, benchmark paper structuring, figure design, pre-submission review, AI-assisted research workflow). Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `docs/en/handbook/`, or as MCP-installable plugin skills under `plugins/phd-research/skills/`.
+> A PhD-level academic research methodology distilled into seven structured skills, covering the full paper lifecycle (idea evaluation, introduction drafting, technical paper structuring, benchmark paper structuring, figure design, pre-submission review, AI-assisted research workflow). Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `docs/en/handbook/`, or as plugin skills under `plugins/phd-research/skills/`.
 
 Target audience: researchers writing papers for NeurIPS, ICML, ICLR, VLDB, SIGMOD, KDD, ACL, EMNLP, CVPR, and similar top venues.
 
 ## Install
 
-Paste the following prompt into any MCP-aware AI assistant:
+Paste the following prompt into your AI assistant:
 
 ```
-Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with MCP and Skills.
+Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
 See [README.md](README.md) (Chinese) or [README.en.md](README.en.md) for full details.

@@ -101,10 +101,10 @@ Supervisor-Skills/
 
 ## 快速开始 (Quick Start)
 
-把下方这段 Prompt 发给你的 AI 助手（Claude Code、Cursor、Codex，或任意支持 MCP 的客户端）即可完成安装：
+把下方这段 Prompt 发给你的 AI 助手（Claude Code、Cursor、Codex 等）即可完成安装：
 
 ```
-Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with MCP and Skills.
+Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
 ## 贡献与反馈
@@ -125,9 +125,6 @@ Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-S
 **Guide**
 - 如何写好Rebuttal？审稿人不理我的Rebuttal，怎么办？
 - 如何与他人进行高效的学术合作？
-
-**Skills**
-- MCP Development
 
 ## License
 

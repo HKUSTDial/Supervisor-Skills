@@ -110,10 +110,10 @@ This is the core of the repository. The theoretical experience above is distille
 
 ## Quick Start
 
-Paste the following prompt into any MCP-aware AI assistant (Claude Code, Cursor, Codex, and similar) to complete the installation:
+Paste the following prompt into your AI assistant (Claude Code, Cursor, Codex, and similar) to complete the installation:
 
 ```
-Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with MCP and Skills.
+Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
 ## Contributing & feedback
@@ -134,9 +134,6 @@ Thanks to [Yin Wu](https://openreview.net/profile?id=%7EYin_WU2), [Boyan Li](htt
 **Guide**
 - How to write a strong rebuttal, and what to do when reviewers ignore your response.
 - How to collaborate effectively on academic work.
-
-**Skills**
-- MCP Development
 
 ## License
 
