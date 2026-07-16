@@ -1,4 +1,4 @@
-# Skills: a reader's guide to the eleven executable skills
+# Skills: a reader's guide to the twelve executable skills
 
 English · [中文](README.md)
 
@@ -12,14 +12,14 @@ Supervisor-Skills is layered by audience:
 |---|---|---|
 | Top-level [`README.en.md`](../README.en.md) | First-time visitors | Why the project exists, tutorial structure, how to install |
 | [`handbook/`](../handbook/) (Chinese, canonical) / [`handbook-en/`](../handbook-en/) (English mirror) | Readers who want the methodology | Six chapters of research and writing handbook (the theoretical spine) |
-| **This file** | Readers who want the skills directly | **What each of the 11 skills is, when to use it, how it chains with the others** |
+| **This file** | Readers who want the skills directly | **What each of the 12 skills is, when to use it, how it chains with the others** |
 | `SKILL.md` (inside each skill directory) | The plugin / LLMs | Executable spec: integrity gates, output formats, mode options — machine-readable, not optimised for human browsing |
 
 In one line: **the handbook teaches the way, SKILL.md runs the tool, this README is the bridge between them.**
 
 ## Two narrative tracks: technical paper vs benchmark paper
 
-The eleven skills are not isolated tools. They map to two complete lifecycles of a top-venue paper and add survey-grade research, evidence-gated drafting and polishing, and an execution-oriented Draw.io reconstruction capability. Locate yourself on the right track first, then pick the skill you need.
+The twelve skills are not isolated tools. They map to two complete lifecycles of a top-venue paper and add survey-grade research, evidence-gated argument planning, drafting and polishing, and an execution-oriented Draw.io reconstruction capability. Locate yourself on the right track first, then pick the skill you need.
 
 ### Track 1: technical / position paper (new method for an existing problem)
 
@@ -27,14 +27,15 @@ Following the natural order a PhD student takes for their first top-venue paper:
 
 1. **[idea-evaluator](idea-evaluator/SKILL.md)** — before committing months to an idea, run the reviewer-grade vetting; cut weak ideas early and sharpen the promising ones
 2. **[tech-paper-template](tech-paper-template/SKILL.md)** — before writing any prose, lock the full logical skeleton of the paper
-3. **[intro-drafter](intro-drafter/SKILL.md)** — write the skeleton straight into six paragraphs of Introduction prose with retrieval-verified citations (outline mode on request)
-4. **[paper-writer](paper-writer/SKILL.md)** — evidence-gated drafting for every other section, from one paragraph to the full manuscript, with nothing fabricated
-5. **[figure-designer](figure-designer/SKILL.md)** — design the three load-bearing figures: Motivated Example, Solution Overview, Experimental Results
-6. **[drawio-reconstruction](drawio-reconstruction/SKILL.md)** — when a reference image, draft, or screenshot already exists, rebuild it as editable Draw.io
-7. **[paper-polish](paper-polish/SKILL.md)** — meaning-preserving language polish: AI-tone removal, claim calibration, Chinese-to-English rewriting
-8. **[pre-submission-reviewer](pre-submission-reviewer/SKILL.md)** — the 3-to-5-day deadline-window audit
+3. **[write-top-tier-ml-paper](write-top-tier-ml-paper/SKILL.md)** — map observations, principles, components, claims, experiments, and figures into a reviewer-auditable evidence plan
+4. **[intro-drafter](intro-drafter/SKILL.md)** — write the skeleton straight into six paragraphs of Introduction prose with retrieval-verified citations (outline mode on request)
+5. **[paper-writer](paper-writer/SKILL.md)** — evidence-gated drafting for every other section, from one paragraph to the full manuscript, with nothing fabricated
+6. **[figure-designer](figure-designer/SKILL.md)** — design the three load-bearing figures: Motivated Example, Solution Overview, Experimental Results
+7. **[drawio-reconstruction](drawio-reconstruction/SKILL.md)** — when a reference image, draft, or screenshot already exists, rebuild it as editable Draw.io
+8. **[paper-polish](paper-polish/SKILL.md)** — meaning-preserving language polish: AI-tone removal, claim calibration, Chinese-to-English rewriting
+9. **[pre-submission-reviewer](pre-submission-reviewer/SKILL.md)** — the 3-to-5-day deadline-window audit
 
-**Two cross-cutting tools**, orthogonal to the eight steps above:
+**Two cross-cutting tools**, orthogonal to the nine steps above:
 
 - [deep-research](deep-research/SKILL.md) — survey-grade literature investigation, usable before topic selection or at any point while writing: multi-perspective search, per-citation verification, a report that answers explicit research questions
 - [vibe-research-workflow](vibe-research-workflow/SKILL.md) — whether you are coding, drawing, or writing at any stage, it gives you AI-collaboration rules and tool picks
@@ -52,6 +53,7 @@ Readers with a specific bottleneck can skip the reading order and jump straight 
 - Not confident about greenlighting an idea → **idea-evaluator**
 - Introduction reads like a set of disconnected claims, or you want the Intro prose directly → **intro-drafter**
 - Methodology section will not flow → **tech-paper-template**
+- The skeleton exists, but contributions, experiments, and figures do not form a defensible evidence loop → **write-top-tier-ml-paper**
 - Idea and results in hand, want a section written → **paper-writer**
 - Prose is stiff, AI-flavored, or a Chinese draft needs submission English → **paper-polish**
 - Figures look clumsy, not sure which tool to use → **figure-designer**
@@ -60,7 +62,7 @@ Readers with a specific bottleneck can skip the reading order and jump straight 
 - Cannot articulate the benchmark gap or organise evaluation dimensions → **benchmark-paper-template**
 - Unsure how to delegate to AI without diluting academic judgment → **vibe-research-workflow**
 
-## The eleven skill cards
+## The twelve skill cards
 
 Each card translates the SKILL.md spec into plain-reader language, adds the matching handbook chapters, and notes the upstream/downstream skills.
 
@@ -97,7 +99,20 @@ Each card translates the SKILL.md spec into plain-reader language, adds the matc
 - **Key discipline**: choose the paper's **positioning type** once (technical / position paper vs new-problem / new-setting paper); enforce the challenge-to-module one-to-one mapping with at most three entries; every contribution bullet must cite the section that delivers it.
 - **Output**: a completed thinking-template table + self-consistency audit (the "challenge—module—contribution" three-way interlock) + structured input ready for intro-drafter.
 - **Matching handbook chapters**: [3.1 Essentials of a research paper](../handbook-en/03_Paper_Writing/3.1_the-essentials-of-a-research-paper.md) · [3.3 Technical paper template](../handbook-en/03_Paper_Writing/3.3_technical-paper-template.md)
-- **Up- and downstream**: upstream is **idea-evaluator**; downstream is **intro-drafter** (turn the skeleton into a six-paragraph outline) and **figure-designer** (fix the Solution Overview figure around the module graph).
+- **Up- and downstream**: upstream is **idea-evaluator**; downstream is **write-top-tier-ml-paper** when the contribution-evidence plan needs a stress test, then **intro-drafter** and **figure-designer**.
+
+### write-top-tier-ml-paper — the claim-evidence architect
+
+- **Positioning**: turns a technical-paper skeleton or partial result set into a reviewer-auditable argument. It connects diagnostic observations to design principles, method components, bounded contributions, experiments, and main-paper figures.
+- **When to trigger**:
+  - The paper reads like a list of modules rather than one coherent argument
+  - Introduction claims, method sections, and experiments do not align
+  - You need a paragraph-level plan for what every section should prove
+  - Claims such as lossless, general, plug-and-play, or mechanism-grounded need evidence calibration
+- **Key discipline**: every contribution enters a claim-evidence ledger; every component must follow from an observation or constraint; experiments are selected by reviewer question rather than benchmark availability; unsupported claims are weakened instead of decorated.
+- **Output**: a research spine, bounded contribution list, claim-evidence matrix, section-by-section and paragraph-by-paragraph blueprint, prioritized experiment plan, figure and table storyboard, and dangerous reviewer questions.
+- **Source basis**: an original structural synthesis of TaylorSeer, ToCa, GlobalCom2, and VidCom2, with the four arXiv sources attributed in the skill. The papers are writing case studies, not prose templates or acceptance evidence.
+- **Up- and downstream**: upstream is **tech-paper-template**; downstream is **intro-drafter**, **paper-writer**, and **figure-designer** once the evidence plan closes.
 
 ### intro-drafter — six paragraphs of Introduction prose
 
@@ -109,7 +124,7 @@ Each card translates the SKILL.md spec into plain-reader language, adds the matc
 - **Key discipline**: search before writing (a full Introduction typically weaves 15-25 verified references); running examples are never fabricated (absent a real case from the user, the background paragraph stays abstract and the closing note asks for one); the shared evidence discipline with paper-writer applies (zero placeholder tags, no invented specifics).
 - **Output**: six paragraphs of Introduction prose + a References list matched bidirectionally + at most three lines of closing notes.
 - **Matching handbook chapter**: [3.2 Introduction writing flowchart](../handbook-en/03_Paper_Writing/3.2_introduction-writing-flowchart.md)
-- **Up- and downstream**: upstream is **tech-paper-template**; downstream is **figure-designer** (the Running Example from paragraph 1 becomes the Motivated Example figure) and **paper-writer** (every other section).
+- **Up- and downstream**: upstream is **tech-paper-template** and, when evidence alignment is needed, **write-top-tier-ml-paper**; downstream is **figure-designer** and **paper-writer**.
 
 ### paper-writer — evidence-gated paper drafting
 
@@ -121,7 +136,7 @@ Each card translates the SKILL.md spec into plain-reader language, adds the matc
 - **Key discipline**: factual claims have exactly three legitimate origins (user materials, this session's verified retrieval, or field common knowledge with no numbers, names, or comparisons), never model memory; zero placeholder tags, the only resolution path is search, rewrite, or delete; full papers, final mode, or three-plus citations trigger the **independent citation verification** (a fresh-context sub-agent checks every entry, with honest degradation and disclosure when the environment lacks sub-agents).
 - **Output**: clean section or manuscript prose + a bidirectionally matched References list + at most three lines of notes; full-paper runs keep an evidence map and chapter blueprint as separate working files.
 - **Matching handbook chapters**: [3.1 Essentials](../handbook-en/03_Paper_Writing/3.1_the-essentials-of-a-research-paper.md) · [3.3 Technical paper template](../handbook-en/03_Paper_Writing/3.3_technical-paper-template.md) · [3.5 Writing details](../handbook-en/03_Paper_Writing/3.5_writing-details-and-checklist.md)
-- **Up- and downstream**: upstream is **tech-paper-template** (skeleton) and **intro-drafter** (Introduction prose); downstream is **paper-polish** (language) and **pre-submission-reviewer** (final audit).
+- **Up- and downstream**: upstream is **tech-paper-template**, **write-top-tier-ml-paper** (claim-evidence plan), and **intro-drafter**; downstream is **paper-polish** and **pre-submission-reviewer**.
 
 ### benchmark-paper-template — the all-in-one orchestrator for benchmark papers
 
@@ -196,7 +211,7 @@ Each card translates the SKILL.md spec into plain-reader language, adds the matc
 - **Core principle**: **keep academic judgment in the human's hands, delegate mechanical labour to AI**; every AI output must come with checkable evidence; tool picks are per task type with a concrete shortlist.
 - **Output**: a recommended tool chain for the current scenario, a human-AI division-of-labour sketch, and a common-failure-mode catalogue.
 - **Matching handbook chapters**: [5.1 Vibe Research and Vibe Coding primer](../handbook-en/05_Vibe_Research/5.1_vibe-research-and-vibe-coding.md) · [5.2 Practitioner notes](../handbook-en/05_Vibe_Research/5.2_liboyan-practical-notes.md)
-- **How it fits**: **orthogonal** to the other ten skills. It is not step N; it is a rulebook you pull up at any step. Drafting requests are legitimate: they route to paper-writer / intro-drafter, whose evidence discipline forbids fabricated substance; disclosure and per-passage verification duties stay with the author.
+- **How it fits**: **orthogonal** to the other eleven skills. It is not step N; it is a rulebook you pull up at any step. Drafting requests are legitimate: they route to paper-writer / intro-drafter, whose evidence discipline forbids fabricated substance; disclosure and per-passage verification duties stay with the author.
 
 ## How to actually use these skills
 
@@ -207,6 +222,7 @@ Follow the [Quick Start](../README.en.md#quick-start) in the top-level README. O
 - "survey this direction for me / literature review" → `deep-research`
 - "help me evaluate this idea" → `idea-evaluator`
 - "lock the paper's logical skeleton for me" → `tech-paper-template`
+- "turn my claims and results into a reviewer-auditable paper plan" → `write-top-tier-ml-paper`
 - "draft the Introduction / I want to write the intro" → `intro-drafter`
 - "write this idea into a Discussion / draft the paper" → `paper-writer`
 - "polish this / strip the AI flavor / turn my Chinese draft into submission English" → `paper-polish`
@@ -231,6 +247,7 @@ Each skill's `references/` directory carries on-demand depth. For example, `idea
 | deep-research | 2.1 (pre-topic reconnaissance; largely new research-side capability) |
 | idea-evaluator | 2.1 / 2.2 / 2.3 |
 | tech-paper-template | 3.1 / 3.3 |
+| write-top-tier-ml-paper | 3.1 / 3.3 / 3.5 plus four attributed arXiv case studies |
 | intro-drafter | 3.2 |
 | paper-writer | 3.1 / 3.3 / 3.5 |
 | paper-polish | 3.5 |

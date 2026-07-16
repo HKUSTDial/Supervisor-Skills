@@ -12,14 +12,14 @@ Supervisor-Skills 的内容被分成三层，各有各的读者：
 |---|---|---|
 | 顶层 [`README.md`](../README.md) | 第一次打开项目的人 | 为什么做这个项目、教程结构、怎么装 |
 | [`handbook/`](../handbook/) | 想系统学方法论的人 | 六章科研与写作系统指南（理论主轴） |
-| **本文件** | 想直接上手技能的人 | 11 个技能**分别是什么、什么时候用、怎么接龙** |
+| **本文件** | 想直接上手技能的人 | 12 个技能**分别是什么、什么时候用、怎么接龙** |
 | `SKILL.md`（每个技能目录内） | 插件 / LLM | 可执行规范：完整性核查、输出格式、模式选项（机器可读，人看有点累） |
 
 一句话：**handbook 教"道"，SKILL.md 跑"器"，本 README 是"道器之间的桥"。**
 
 ## 两条主线：技术论文 vs Benchmark 论文
 
-11 个技能不是一堆孤立工具，它们对应两条完整的论文生命周期，并补上研究侧的深度调研、产出侧的正文写作与润色，以及 Draw.io 重建这一类执行型作图能力。先定位自己在写哪种论文，再决定从哪个技能入手。
+12 个技能不是一堆孤立工具，它们对应两条完整的论文生命周期，并补上研究侧的深度调研、证据闭环规划、正文写作与润色，以及 Draw.io 重建这一类执行型作图能力。先定位自己在写哪种论文，再决定从哪个技能入手。
 
 ### 主线一：技术类 / 立场类论文（新方法解决已有问题）
 
@@ -27,14 +27,15 @@ Supervisor-Skills 的内容被分成三层，各有各的读者：
 
 1. **[idea-evaluator](idea-evaluator/SKILL.md)** — 在把一个 idea 立项前做体检，淘汰弱 idea、打磨有潜力的
 2. **[tech-paper-template](tech-paper-template/SKILL.md)** — 动笔写任何段落之前，先锁住完整的论文逻辑骨架
-3. **[intro-drafter](intro-drafter/SKILL.md)** — 把骨架直接写成六段式 Introduction 正文（引用经真实检索核验；也可只要大纲）
-4. **[paper-writer](paper-writer/SKILL.md)** — 其余章节的证据门控正文写作，从单段到整篇，绝不编造
-5. **[figure-designer](figure-designer/SKILL.md)** — 规划 Motivated Example、Solution Overview、Experiment 三张承重图
-6. **[drawio-reconstruction](drawio-reconstruction/SKILL.md)** — 当已有参考图、草图或截图时，重建为可编辑 Draw.io 文件
-7. **[paper-polish](paper-polish/SKILL.md)** — 忠于原意的语言润色：去 AI 腔、把握分寸、中译英
-8. **[pre-submission-reviewer](pre-submission-reviewer/SKILL.md)** — 投稿截止前 3 到 5 天的最终审核
+3. **[write-top-tier-ml-paper](write-top-tier-ml-paper/SKILL.md)** — 把观察、原则、组件、贡献、实验和主图组织成可审稿的证据闭环
+4. **[intro-drafter](intro-drafter/SKILL.md)** — 把骨架直接写成六段式 Introduction 正文（引用经真实检索核验；也可只要大纲）
+5. **[paper-writer](paper-writer/SKILL.md)** — 其余章节的证据门控正文写作，从单段到整篇，绝不编造
+6. **[figure-designer](figure-designer/SKILL.md)** — 规划 Motivated Example、Solution Overview、Experiment 三张承重图
+7. **[drawio-reconstruction](drawio-reconstruction/SKILL.md)** — 当已有参考图、草图或截图时，重建为可编辑 Draw.io 文件
+8. **[paper-polish](paper-polish/SKILL.md)** — 忠于原意的语言润色：去 AI 腔、把握分寸、中译英
+9. **[pre-submission-reviewer](pre-submission-reviewer/SKILL.md)** — 投稿截止前 3 到 5 天的最终审核
 
-**两个横向工具**，和上面八步**正交**，不是第 9 步：
+**两个横向工具**，和上面九步**正交**，不是第 10 步：
 
 - [deep-research](deep-research/SKILL.md) — 选题前或写作中随时可用的综述级文献调研：多视角检索、逐条引用核验、回答明确研究问题的 survey 报告
 - [vibe-research-workflow](vibe-research-workflow/SKILL.md) — 无论你正在写代码、画图还是写文字，它都会给你 AI 协作的行为规则与工具选择建议
@@ -52,6 +53,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - Idea 立项没底气 → **idea-evaluator**
 - Introduction 逻辑链断了、或想直接拿到 Intro 正文 → **intro-drafter**
 - 方法章节写不顺 → **tech-paper-template**
+- 骨架已经有了，但贡献、实验和主图还没有形成可审稿的证据闭环 → **write-top-tier-ml-paper**
 - 想法和结果都有了，想直接写出某个章节的正文 → **paper-writer**
 - 文字生硬、AI 味重、中文稿要改成投稿英文 → **paper-polish**
 - 图画得别扭，不知道用什么工具 → **figure-designer**
@@ -60,7 +62,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - Benchmark 的 gap 说不清、评估维度理不顺 → **benchmark-paper-template**
 - AI 辅助科研的规则拿不准 → **vibe-research-workflow**
 
-## 11 张技能卡片
+## 12 张技能卡片
 
 每张卡把 SKILL.md 的严谨定义翻译成"人话"，附带配套的 handbook 章节以及与其它技能的接龙关系。
 
@@ -97,7 +99,20 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - **关键纪律**：技术类论文 vs 新问题/设定类论文的**论文定位**必须先选一次；挑战与模块一一对应，数量不超过三；贡献点必须指向具体章节编号。
 - **产出**：一张完整的 thinking-template 表 + 自洽性核查（"挑战—模块—贡献"三路互锁）+ 下游 intro-drafter 直接可用的结构化输入。
 - **对应 handbook 章节**：[3.1 完成一篇科研论文你需要做几件事情](../handbook/03_Paper_Writing/3.1_完成一篇科研论文你需要做几件事情.md) · [3.3 技术类 Full Paper 思考模板](../handbook/03_Paper_Writing/3.3_技术类Full_Paper思考模板.md)
-- **上下游**：上游 **idea-evaluator**；下游 **intro-drafter**（把骨架翻译成六段式 Intro）和 **figure-designer**（锁定 Solution Overview 图）。
+- **上下游**：上游 **idea-evaluator**；需要强化贡献与证据闭环时，下游先接 **write-top-tier-ml-paper**，再进入 **intro-drafter** 与 **figure-designer**。
+
+### write-top-tier-ml-paper — 贡献与证据的“论文架构师”
+
+- **定位**：把技术论文骨架或部分实验结果整理成可审稿的完整论证，将诊断观察、设计原则、方法组件、贡献、实验和主图一一对齐。
+- **什么时候触发**：
+  - 论文读起来像模块清单，而不是一条完整论证
+  - Introduction 的主张、Method 的组件与 Experiments 没有对齐
+  - 想知道每一节、每一段应该证明什么
+  - `lossless`、`general`、`plug-and-play`、`mechanism-grounded` 等主张需要校准证据强度
+- **关键纪律**：每项贡献必须进入 claim-evidence 台账；每个组件必须来自一项观察或约束；实验按审稿问题选择，而不是按现成 benchmark 堆叠；证据不足时降低主张强度，不用形容词掩盖。
+- **产出**：一句话 research spine、有边界的贡献列表、claim-evidence 矩阵、逐节逐段蓝图、分优先级的实验计划、主图与表格 storyboard，以及最危险的审稿问题。
+- **来源说明**：基于 TaylorSeer、ToCa、GlobalCom2、VidCom2 四篇 arXiv 论文论证结构的原创综合，skill 内明确标注来源；它们只作为写作案例，不作为措辞模板或接收状态证据。
+- **上下游**：上游是 **tech-paper-template**；证据计划闭环后，下游接 **intro-drafter**、**paper-writer** 和 **figure-designer**。
 
 ### intro-drafter — 六段式 Introduction 正文
 
@@ -109,7 +124,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - **关键纪律**：引用先检索后写（完整 Intro 通常织入 15-25 条经核验的文献）；Running Example 绝不编造——用户没给真实案例就用抽象描述写背景段，并在尾注里请用户提供；遵守与 paper-writer 共享的证据纪律（零占位标签、用户没给的细节不写）。
 - **产出**：六段 Introduction 正文 + References 列表（编号双向对应）+ 至多三行的尾注提醒。
 - **对应 handbook 章节**：[3.2 Introduction 写作的思考模型](../handbook/03_Paper_Writing/3.2_Introduction写作的思考模型.md)
-- **上下游**：上游 **tech-paper-template**；下游 **figure-designer**（第一段的 Running Example 要变成 Motivated Example 图）和 **paper-writer**（其余章节）。
+- **上下游**：上游 **tech-paper-template**，需要证据对齐时再经过 **write-top-tier-ml-paper**；下游接 **figure-designer** 和 **paper-writer**。
 
 ### paper-writer — 证据门控的论文正文写作
 
@@ -121,7 +136,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - **关键纪律**：事实性声明只有三种合法来源（用户材料 / 本次检索核验过的文献 / 不含数字人名比较的领域常识），模型记忆永远不算；输出零占位标签，缺证据的唯一路径是检索、改写或删除；引用密度先检索后写；整篇 / 终稿 / 引用满 3 条时触发**独立引用核查**（全新上下文的子代理逐条核验，环境不支持则诚实降级并披露）。
 - **产出**：干净的章节或全文正文 + References（双向对应）+ 至多三行说明；整篇任务附证据台账与章节蓝图两份工作文件（不嵌入正文）。
 - **对应 handbook 章节**：[3.1 全流程](../handbook/03_Paper_Writing/3.1_完成一篇科研论文你需要做几件事情.md) · [3.3 技术类模板](../handbook/03_Paper_Writing/3.3_技术类Full_Paper思考模板.md) · [3.5 写作细节](../handbook/03_Paper_Writing/3.5_写作细节与Checklist.md)
-- **上下游**：上游 **tech-paper-template**（骨架）与 **intro-drafter**（Intro 正文）；下游 **paper-polish**（磨语言）与 **pre-submission-reviewer**（投稿前审核）。
+- **上下游**：上游 **tech-paper-template**、**write-top-tier-ml-paper**（贡献与证据计划）与 **intro-drafter**；下游 **paper-polish** 与 **pre-submission-reviewer**。
 
 ### benchmark-paper-template — Benchmark 论文的一站式编排器
 
@@ -196,7 +211,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - **核心原则**：**学术判断保留在人手里，把机械劳动交给 AI**；每次 AI 产出都要有明确的可复核证据；工具选型按任务类型落到具体清单。
 - **产出**：当前场景的推荐工具链、人机分工示意、常见失败模式对照表。
 - **对应 handbook 章节**：[5.1 Vibe Research 与 Vibe Coding 入门](../handbook/05_Vibe_Research/5.1_Vibe_Research与Vibe_Coding入门.md) · [5.2 实战经验分享](../handbook/05_Vibe_Research/5.2_李伯岩实战经验分享与会议纪要.md)
-- **用法特点**：与其它十个技能**正交**。不是第 N 步，而是你走每一步时都可以随时调用的协作规则。写作类请求（起草正文）是合法的：转给 paper-writer / intro-drafter，它们的证据纪律保证不编造实质内容；披露义务与逐段核验义务不变。
+- **用法特点**：与其它十一个技能**正交**。不是第 N 步，而是你走每一步时都可以随时调用的协作规则。写作类请求（起草正文）是合法的：转给 paper-writer / intro-drafter，它们的证据纪律保证不编造实质内容；披露义务与逐段核验义务不变。
 
 ## 怎么用这些技能
 
@@ -207,6 +222,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - "帮我调研一下这个方向 / 做个文献综述" → `deep-research`
 - "帮我评估一下这个 idea" → `idea-evaluator`
 - "先帮我把论文的逻辑骨架搭出来" → `tech-paper-template`
+- "把我的贡献和结果整理成可审稿的论文与实验证据计划" → `write-top-tier-ml-paper`
 - "起草 Introduction / 我想写一下 Intro" → `intro-drafter`
 - "帮我把这个想法写成一段 Discussion / 写篇初稿" → `paper-writer`
 - "帮我润色这段 / 去掉 AI 味 / 中文稿翻成投稿英文" → `paper-polish`
@@ -231,6 +247,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 | deep-research | 2.1（选题前的方向侦察，主体为新增研究侧能力） |
 | idea-evaluator | 2.1 / 2.2 / 2.3 |
 | tech-paper-template | 3.1 / 3.3 |
+| write-top-tier-ml-paper | 3.1 / 3.3 / 3.5，并补充四篇已标注来源的 arXiv 案例 |
 | intro-drafter | 3.2 |
 | paper-writer | 3.1 / 3.3 / 3.5 |
 | paper-polish | 3.5 |

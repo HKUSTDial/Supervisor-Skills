@@ -4,7 +4,7 @@ This repository welcomes issues, pull requests, and discussions. Please read thi
 
 ## Scope
 
-The current skill set contains eleven anchor skills under `skills/`: `idea-evaluator`, `deep-research`, `vibe-research-workflow`, `intro-drafter`, `paper-writer`, `tech-paper-template`, `benchmark-paper-template`, `paper-polish`, `figure-designer`, `drawio-reconstruction`, `pre-submission-reviewer`. Adding a new skill requires:
+The current skill set contains twelve anchor skills under `skills/`: `idea-evaluator`, `deep-research`, `vibe-research-workflow`, `intro-drafter`, `paper-writer`, `tech-paper-template`, `write-top-tier-ml-paper`, `benchmark-paper-template`, `paper-polish`, `figure-designer`, `drawio-reconstruction`, `pre-submission-reviewer`. Adding a new skill requires:
 
 1. Discussion via issue first; confirm the skill fills a real gap and is not covered by an existing skill.
 2. Clear attribution for any content not derived from `handbook/`.

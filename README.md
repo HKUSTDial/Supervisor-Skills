@@ -129,6 +129,7 @@ Supervisor-Skills/
 │   ├── deep-research/
 │   ├── vibe-research-workflow/
 │   ├── tech-paper-template/           # 写作阶段技能
+│   ├── write-top-tier-ml-paper/
 │   ├── intro-drafter/
 │   ├── paper-writer/
 │   ├── benchmark-paper-template/
@@ -168,6 +169,7 @@ Supervisor-Skills/
 | **Paper Polish** | 忠于原意的语言润色：改语法、去 AI 腔、把握措辞分寸、中文稿改写为投稿级英文，可能动到含义的改动逐条标出请你确认 | [使用技能](skills/paper-polish/SKILL.md) |
 | **Deep Research** | 综述级文献深度调研：多视角检索、逐条引用核验、MECE 分类综合与交叉对比，产出逐条回答研究问题的 survey 报告 | [使用技能](skills/deep-research/SKILL.md) |
 | **Tech Paper Template** | 基于"技术类Full Paper思考模板"，辅助你一步步梳理论文的完整逻辑链 | [使用技能](skills/tech-paper-template/SKILL.md) |
+| **Top-Tier ML Paper Planner** | 把诊断观察、设计原则、方法组件、贡献、实验和主图组织成可审稿的 claim-evidence 闭环，并给出逐节逐段蓝图 | [使用技能](skills/write-top-tier-ml-paper/SKILL.md) |
 | **Benchmark Paper Template** | 专为 Benchmark/Evaluation 类论文设计，辅助梳理评估逻辑和实验设计 | [使用技能](skills/benchmark-paper-template/SKILL.md) |
 | **Pre-Submission Reviewer** | 顶会审稿人视角！基于写作 Checklist 和英语语法易错点，对草稿进行全面审查 | [使用技能](skills/pre-submission-reviewer/SKILL.md) |
 | **Figure Design Advisor** | 告诉 AI 你想表达什么，它会根据动机图/总览图/实验图的设计范式给出专业作图建议 | [使用技能](skills/figure-designer/SKILL.md) |

@@ -136,6 +136,7 @@ Supervisor-Skills/
 │   ├── deep-research/
 │   ├── vibe-research-workflow/
 │   ├── tech-paper-template/
+│   ├── write-top-tier-ml-paper/
 │   ├── intro-drafter/
 │   ├── paper-writer/
 │   ├── benchmark-paper-template/
@@ -177,6 +178,7 @@ This is the core of the repository. The theoretical experience above is distille
 | **Paper Polish** | Meaning-preserving language polishing: grammar, AI-tone removal, claim calibration, and Chinese-to-English rewriting at submission quality, with meaning-risk edits flagged for your confirmation. | [Use skill](skills/paper-polish/SKILL.md) |
 | **Deep Research** | Survey-grade literature investigation: multi-perspective search, per-citation verification, MECE synthesis with cross-comparison, delivered as a survey report that answers explicit research questions. | [Use skill](skills/deep-research/SKILL.md) |
 | **Tech Paper Template** | Based on the "Technical Full Paper thinking template", walks you through the full logical chain of your paper. | [Use skill](skills/tech-paper-template/SKILL.md) |
+| **Top-Tier ML Paper Planner** | Turns diagnostic observations, design principles, components, claims, experiments, and figures into a reviewer-auditable claim-evidence loop with paragraph-level section contracts. | [Use skill](skills/write-top-tier-ml-paper/SKILL.md) |
 | **Benchmark Paper Template** | Designed for Benchmark/Evaluation papers, helping you structure evaluation logic and experimental design. | [Use skill](skills/benchmark-paper-template/SKILL.md) |
 | **Pre-Submission Reviewer** | Reviewer's perspective at a top venue — runs a full review over your draft based on the writing checklist and common English grammar pitfalls. | [Use skill](skills/pre-submission-reviewer/SKILL.md) |
 | **Figure Design Advisor** | Tell the AI what you want to express; it returns professional drawing advice based on the motivated / overview / experimental figure paradigms. | [Use skill](skills/figure-designer/SKILL.md) |
