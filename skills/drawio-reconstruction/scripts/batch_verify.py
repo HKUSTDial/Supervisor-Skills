@@ -18,15 +18,21 @@ def load_jobs(target):
         jobs = []
         for entry in manifest.get("entries", []):
             drawio = Path(entry["drawio"])
-            preview = Path(entry.get("preview") or drawio.with_suffix(".png"))
+            preview = Path(
+                entry.get("preview")
+                or drawio.with_name(f"{drawio.stem}_preview.png")
+            )
             jobs.append((drawio, preview))
         return jobs
 
     if target.is_file() and target.suffix.lower() == ".drawio":
-        return [(target, target.with_suffix(".png"))]
+        return [(target, target.with_name(f"{target.stem}_preview.png"))]
 
     if target.is_dir():
-        return [(path, path.with_suffix(".png")) for path in sorted(target.glob("*.drawio"))]
+        return [
+            (path, path.with_name(f"{path.stem}_preview.png"))
+            for path in sorted(target.glob("*.drawio"))
+        ]
 
     raise FileNotFoundError(f"missing target: {target}")
 

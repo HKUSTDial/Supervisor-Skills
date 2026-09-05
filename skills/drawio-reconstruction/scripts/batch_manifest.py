@@ -14,33 +14,41 @@ def iter_images(source_dir, recursive):
             yield path
 
 
-def output_pair_available(drawio_path, preview_path, overwrite):
+def output_pair_available(drawio_path, preview_path, overwrite, reserved, sources):
+    outputs = {drawio_path.resolve(), preview_path.resolve()}
+    if outputs & reserved or outputs & sources:
+        return False
     return overwrite or (not drawio_path.exists() and not preview_path.exists())
 
 
-def unique_output_pair(output_dir, stem, overwrite):
-    candidate = output_dir / f"{stem}.drawio"
-    preview = candidate.with_suffix(".png")
-    if output_pair_available(candidate, preview, overwrite):
-        return candidate, preview
-    index = 2
+def unique_output_pair(output_dir, stem, overwrite, reserved, sources):
+    index = 1
     while True:
-        revised = output_dir / f"{stem}-v{index}.drawio"
-        revised_preview = revised.with_suffix(".png")
-        if output_pair_available(revised, revised_preview, overwrite):
-            return revised, revised_preview
+        suffix = "" if index == 1 else f"-v{index}"
+        drawio = output_dir / f"{stem}{suffix}.drawio"
+        preview = output_dir / f"{stem}{suffix}_preview.png"
+        if output_pair_available(drawio, preview, overwrite, reserved, sources):
+            return drawio, preview
         index += 1
 
 
 def make_manifest(source_dir, output_dir, recursive=False, overwrite=False):
     source_dir = source_dir.resolve()
     output_dir = output_dir.resolve()
+    images = list(iter_images(source_dir, recursive))
+    sources = {path.resolve() for path in images}
+    reserved = set()
     entries = []
 
-    for index, image_path in enumerate(iter_images(source_dir, recursive), start=1):
-        stem = image_path.stem
-        drawio_path, preview_path = unique_output_pair(output_dir, stem, overwrite)
-
+    for index, image_path in enumerate(images, start=1):
+        drawio_path, preview_path = unique_output_pair(
+            output_dir,
+            image_path.stem,
+            overwrite,
+            reserved,
+            sources,
+        )
+        reserved.update({drawio_path.resolve(), preview_path.resolve()})
         entries.append(
             {
                 "index": index,
@@ -86,11 +94,7 @@ def main():
         "--manifest",
         help="Manifest path (defaults to <output-dir>/drawio_batch_manifest.json)",
     )
-    parser.add_argument(
-        "--recursive",
-        action="store_true",
-        help="Scan image files recursively",
-    )
+    parser.add_argument("--recursive", action="store_true", help="Scan image files recursively")
     parser.add_argument(
         "--overwrite",
         action="store_true",
@@ -110,7 +114,6 @@ def main():
 
     output_dir = Path(args.output_dir) if args.output_dir else source_dir
     output_dir.mkdir(parents=True, exist_ok=True)
-
     manifest = make_manifest(
         source_dir,
         output_dir,
@@ -120,7 +123,11 @@ def main():
     print_summary(manifest)
 
     if args.write:
-        manifest_path = Path(args.manifest) if args.manifest else output_dir / "drawio_batch_manifest.json"
+        manifest_path = (
+            Path(args.manifest)
+            if args.manifest
+            else output_dir / "drawio_batch_manifest.json"
+        )
         manifest_path.parent.mkdir(parents=True, exist_ok=True)
         manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
         print(f"wrote: {manifest_path}")
