@@ -7,7 +7,7 @@
 ## 全局结构建议
 
 ```
-[可选：2–3 句开场 —— 感谢 + 修改摘要]
+[可选：2-3 句开场: 感谢 + 修改摘要]
 
 **R1.W1** [标题]
 ...
@@ -21,7 +21,7 @@
 
 ---
 
-## 模板 A — 澄清误解（misunderstanding / writing_clarity）
+## 模板 A: 澄清误解（misunderstanding / writing_clarity）
 
 ```
 **R?.W?** [用一句话复述审稿人的关注点]
@@ -40,7 +40,7 @@
 
 ---
 
-## 模板 B — 补充证据（evidence_gap / baseline_fairness / efficiency）
+## 模板 B: 补充证据（evidence_gap / baseline_fairness / efficiency）
 
 ```
 **R?.W?** [复述关注点]
@@ -59,7 +59,7 @@
 
 ---
 
-## 模板 C — 承认局限，收窄范围（scope_claim / novelty / theory）
+## 模板 C: 承认局限，收窄范围（scope_claim / novelty / theory）
 
 ```
 **R?.W?** [复述关注点]
@@ -81,7 +81,7 @@
 Agent 输出的不是最终文本，而是每条关注点的指导计划：
 
 ```
-### R1.W2 — [关注点短标题]
+### R1.W2: [关注点短标题]
 - **Concern type**: evidence_gap
 - **推荐模板**: B
 - **承认点**: 同意 ImageNet 评估会加强论文

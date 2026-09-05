@@ -1,9 +1,15 @@
 # Reviewer Mindset Library (Skill Snapshot)
 
-> Auto-generated from `data/behavior/mindset_library.json`.
-> Regenerate: `python3 scripts/sync_skill_mindset_reference.py`
+## Table of Contents
 
-本文件供 **Agent-only 模式** 使用。在线 pipeline 直接读 JSON + 向量文件。
+- [Cluster 3: 精准建设型](#cluster-3)
+- [Cluster 4: 温和质疑型](#cluster-4)
+- [Cluster 0: 权威否定型](#cluster-0)
+- [Cluster 5: 严厉否定型](#cluster-5)
+- [Cluster 1: 温和建设型](#cluster-1)
+- [Cluster 2: 简洁肯定型](#cluster-2)
+
+> Auto-generated from `data/behavior/mindset_library.json`.
 
 模型方法: `behavior_space_kmeans_llm`，共 6 个心态簇。
 

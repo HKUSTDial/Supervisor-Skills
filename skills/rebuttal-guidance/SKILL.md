@@ -6,22 +6,22 @@ description: >-
   strategy Y, optionally ground in manuscript evidence and similar successful
   historical (review, rebuttal) pairs. Use when the user pastes reviewer
   comments, asks for rebuttal help, rebuttal guidance, response to reviewers,
-  how to reply to R1.W2, OpenReview rebuttal, or reviewer ignored my rebuttal.
+  how to reply to R1.W2, OpenReview rebuttal, or the reviewer ignored the rebuttal.
 ---
 
 # Rebuttal Guidance
 
 ## Overview
 
-This skill delivers **executable rebuttal guidance per concern**—structured plans,
+This skill delivers **executable rebuttal guidance per concern**: structured plans,
 evidence pointers, tone and strategy priorities. It does **not** produce
 ready-to-paste rebuttal prose; the author writes the final text.
 
 The core model is **conditional persuasion P(Z=1 | X, Y)**:
 
-- **X** — reviewer mindset (behavior cluster inferred from review text)
-- **Y** — rebuttal strategy vector (which tactics to emphasize)
-- **Z** — success (score increase or paper accepted)
+- **X**: reviewer mindset (behavior cluster inferred from review text)
+- **Y**: rebuttal strategy vector (which tactics to emphasize)
+- **Z**: success (score increase or paper accepted)
 
 ## When to use
 
@@ -78,11 +78,11 @@ specific phrases that triggered the match.
 
 From the matched cluster in [references/mindset-library.md](references/mindset-library.md), read:
 
-- **Historical up-rate** — calibrate how likely a score increase is.
-- **Rule-stat diffs** (success vs. failure %) — boost tactics with positive diff.
-- **Cohen's d effects** — highlight dimensions with d > 0.8 in success group.
-- **Success / failure patterns** — concrete do's and don'ts from data.
-- **Key strategy** — one-sentence summary for this cluster.
+- **Historical up-rate**: calibrate how likely a score increase is.
+- **Rule-stat diffs** (success vs. failure %): boost tactics with positive diff.
+- **Cohen's d effects**: highlight dimensions with d > 0.8 in success group.
+- **Success / failure patterns**: concrete do's and don'ts from data.
+- **Key strategy**: one-sentence summary for this cluster.
 
 Cross-check dimensions in [references/strategy-dimensions.md](references/strategy-dimensions.md).
 
@@ -91,14 +91,14 @@ Cross-check dimensions in [references/strategy-dimensions.md](references/strateg
 For each concern, emit a guidance block (not final prose):
 
 ```
-### R?.W? — [short title]
+### R?.W?: [short title]
 - **Concern type**: ...
 - **Mindset-aware strategy**: ...
 - **Recommended structure**: Acknowledge → Response → Evidence → Revision note
-- **Clarify from paper?**: yes/no — where to look (section, table, appendix)
-- **New experiment needed?**: yes/no — what exactly (no fabricated numbers)
+- **Clarify from paper?**: yes/no: where to look (section, table, appendix)
+- **New experiment needed?**: yes/no: what exactly (no fabricated numbers)
 - **Tone note**: ...
-- **Template**: A / B / C — see references/response-templates.md
+- **Template**: A / B / C: see references/response-templates.md
 - **Avoid**: ...
 ```
 
@@ -119,10 +119,10 @@ Key flags:
 
 Deliver a `## Rebuttal Guidance` section containing:
 
-1. **Reviewer mindset summary** — cluster name, confidence, identifying phrases.
-2. **Global strategy priorities** — 3–5 bullets from mindset data.
-3. **Per-concern guidance** — Step 5 blocks for each W/Q.
-4. **Checklist highlights** — pass/fail on key integrity items.
+1. **Reviewer mindset summary**: cluster name, confidence, identifying phrases.
+2. **Global strategy priorities**: 3–5 bullets from mindset data.
+3. **Per-concern guidance**: Step 5 blocks for each W/Q.
+4. **Checklist highlights**: pass/fail on key integrity items.
 
 ---
 

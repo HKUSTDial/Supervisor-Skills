@@ -23,7 +23,7 @@
 | **实验导向型** | 高 evidence_gap 质疑，多次要求对比 | 见 mindset-library | 补实验或解释为何现有结果充分 |
 | **高怀疑严厉型** | 高 skepticism + 高 severity + 打分低 | ~7-15% | 硬证据优先，收窄 claim，接受局限 |
 | **强硬多质疑型** | 高 harshness + 多条 concerns + 篇幅长 | ~12% | 新实验 + 直接引用论文 + 明确承诺 |
-| **其他** | 不明显匹配 | — | 优先识别最突出的单一信号 |
+| **其他** | 不明显匹配 | - | 优先识别最突出的单一信号 |
 
 详细统计（涨分率、Cohen's d 效应）见 [mindset-library.md](mindset-library.md)。
 

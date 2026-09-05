@@ -22,9 +22,9 @@
 
 匹配到心态后，从 `mindset-library.md` 对应簇读取：
 
-1. **rule_diff Top 3** — 成功组 vs 失败组差异最大的 3 个维度（正值 = 成功更高）。
-2. **Cohen's d 效应** — d > 0.8 表示该维度对该心态有显著区分力。
-3. **success_patterns / failure_patterns** — LLM 提炼的具体策略描述。
+1. **rule_diff Top 3**: 成功组 vs 失败组差异最大的 3 个维度（正值 = 成功更高）。
+2. **Cohen's d 效应**: d > 0.8 表示该维度对该心态有显著区分力。
+3. **success_patterns / failure_patterns**: LLM 提炼的具体策略描述。
 
 原则：正差异的维度加强，负差异的维度谨慎（失败组反而更高，可能是过度补救信号）。
 
@@ -32,10 +32,10 @@
 
 数据分析发现以下维度组合有协同效应，同时高分时成功率更高：
 
-- `direct_address` + `specific_evidence` — 直接回应 + 具体证据，核心组合
-- `specific_evidence` + `paper_grounding` — 数据有论文锚点，可信度最高
-- `new_experiment_strength` + `specific_evidence` — 新实验要配具体数字
-- `tone_confidence` + 低 `overpromise_risk` — 自信但不夸大
+- `direct_address` + `specific_evidence`: 直接回应 + 具体证据，核心组合
+- `specific_evidence` + `paper_grounding`: 数据有论文锚点，可信度最高
+- `new_experiment_strength` + `specific_evidence`: 新实验要配具体数字
+- `tone_confidence` + 低 `overpromise_risk`: 自信但不夸大
 
 ## 每条 concern 的策略标注格式
 

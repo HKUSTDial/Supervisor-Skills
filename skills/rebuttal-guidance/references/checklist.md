@@ -17,10 +17,10 @@
 
 ## 语气红线（必须在指导中标记）
 
-- "You misunderstood / You missed / This is trivial" — 攻击性，需改写
-- "Significantly / clearly / undoubtedly" — 无数字支撑时是空话
-- "We will fully address in future work" — 在没有任何当下行动时是回避信号
-- 过度道歉 ("We sincerely apologize for...") — 削弱论点
+- "You misunderstood / You missed / This is trivial": 攻击性，需改写
+- "Significantly / clearly / undoubtedly": 无数字支撑时是空话
+- "We will fully address in future work": 在没有任何当下行动时是回避信号
+- 过度道歉 ("We sincerely apologize for..."): 削弱论点
 
 ## 低开放度审稿人的特别提示
 
@@ -28,7 +28,7 @@
 
 - 告知用户：单靠文字说服成功率有限，优先考虑提供一个决定性的新实验。
 - 建议现实目标：澄清最核心的误解 + 一个最小可信的新证据。
-- 不要鼓励用户写过长的 rebuttal——简洁、有力优于面面俱到。
+- 不要鼓励用户写过长的 rebuttal: 简洁、有力优于面面俱到。
 
 ## 常见失误提醒
 
