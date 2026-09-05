@@ -135,6 +135,7 @@ Supervisor-Skills/
 │   ├── paper-polish/                  # 自查与润色技能
 │   ├── pre-submission-reviewer/
 │   ├── figure-designer/
+│   ├── rebuttal-guidance/
 │   └── drawio-reconstruction/         # Draw.io 重建执行技能
 │
 └── assets/                            # 图片资源
@@ -172,6 +173,7 @@ Supervisor-Skills/
 | **Pre-Submission Reviewer** | 顶会审稿人视角！基于写作 Checklist 和英语语法易错点，对草稿进行全面审查 | [使用技能](skills/pre-submission-reviewer/SKILL.md) |
 | **Figure Design Advisor** | 告诉 AI 你想表达什么，它会根据动机图/总览图/实验图的设计范式给出专业作图建议 | [使用技能](skills/figure-designer/SKILL.md) |
 | **Draw.io Reconstruction** | 将参考图、论文图、架构图、幻灯片图或 UI 截图重建为可编辑 `.drawio` 文件，并导出 PNG 预览与视觉审计 | [使用技能](skills/drawio-reconstruction/SKILL.md) |
+| **Rebuttal Guidance** | 基于条件说服模型 P(Z|X,Y)，识别审稿人心态（X）、匹配 rebuttal 策略（Y），为每条 Weakness/Question 生成可执行的回应指导，含 concern 分类、语气建议、证据指针与完整性检查 | [使用技能](skills/rebuttal-guidance/SKILL.md) |
 
 ## 快速开始 (Quick Start)
 
