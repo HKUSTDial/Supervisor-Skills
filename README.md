@@ -183,6 +183,24 @@ Supervisor-Skills/
 Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
+## 🔗 相关开源项目
+
+除了科研构思与论文写作，下面两个项目可以帮助你进一步分析数据、呈现研究结果。
+
+### 📊 DataMagic：动态图表与数据故事
+
+准备组会、论文汇报或项目演示时，可以从 DataMagic 的动态图表配方库中选择案例，通过配套的 `datamagic` Skill，将趋势、排名、对比等数据组织成动画与数据故事。
+
+选择配方、复制实现指令，再交给 Claude Code、Cursor、Codex 等代码智能体，即可替换自己的数据并调整效果。
+
+[GitHub 仓库](https://github.com/HKUSTDial/DataMagic)
+
+### 🔍 DeepEye：数据分析智能体
+
+面对文件、数据库等多种数据源，DeepEye 可以规划并执行多步骤分析工作流，生成分析报告、交互仪表盘和数据视频，支持查看执行过程并参与调整。
+
+[GitHub 仓库](https://github.com/HKUSTDial/DeepEye)
+
 ## 贡献与反馈
 
 这是一款创新的开源 AI Skill 项目。期待能够解决智能体在科研辅助落地中"好用+合规"的问题。
