@@ -16,6 +16,7 @@
 
 ## 📰 News
 
+> - **[2026-11-05]** 🎓 Supervisor 系列续作 **[Ducktor](https://github.com/yinwu01/Ducktor)** 与 **[DeepSeek-Ducktor](https://github.com/yinwu01/DeepSeek-Ducktor)** 正式发布！🚀 在 vibe research 的浪潮下，Agent 替你推进研究，Ducktor 把每一步背后的科研判断讲给你，补全研究者的知识闭环 🔁，让 Agent 与你一起学习、协同进化 🌱。
 > - **[2026-09-21]** 🤝 Supervisor-Skills 与**百度**达成合作，作为专家深度嵌入**库库AI**平台，以「[**计算机科研专家 骆教授**](https://kuku.baidu.com/#/workbench/expert)」的形象呈现。
 > - **[2026-07-15]** 🤝 团队与**豆包**达成合作，Supervisor-Skills 正式作为**豆包·办公模式**的核心科研技能完成部署，驱动「**科研评估**」与「**学术创作**」两大官方能力，将本项目沉淀的科研方法论带给亿级用户。
 > - **[2026-07-10]** 🚀 **v2.1**：新增 `paper-writer`（证据门控的论文正文写作）、`paper-polish`（忠于原意的语言润色）、`deep-research`（综述级文献调研）三个技能；`intro-drafter` 升级为正文输出；评估与评审技能引入学科范式路由。详见 [CHANGELOG](CHANGELOG.md)。

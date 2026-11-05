@@ -18,6 +18,7 @@ English · [中文](README.md)
 
 ## 📰 News
 
+> - **[2026-11-05]** 🎓 **[Ducktor](https://github.com/yinwu01/Ducktor)** and **[DeepSeek-Ducktor](https://github.com/yinwu01/DeepSeek-Ducktor)**, the next chapter of the Supervisor series, are officially released! 🚀 In the wave of vibe research, the agent moves your research forward while Ducktor explains the research judgment behind each step, closing the knowledge loop for researchers 🔁 so that you and your agent learn and evolve together 🌱.
 > - **[2026-09-21]** 🤝 In partnership with **Baidu**, Supervisor-Skills is now embedded in the **Kuku AI (库库AI)** platform as an expert, presented as "[**Prof. Luo, Computer Science Research Expert**](https://kuku.baidu.com/#/workbench/expert)".
 > - **[2026-07-15]** 🤝 In partnership with **Doubao**, Supervisor-Skills has been officially deployed as the core research skill suite of **Doubao Office Mode**, powering its "**Research Evaluation**" and "**Academic Writing**" capabilities and bringing this project's research methodology to a massive user base.
 > - **[2026-07-10]** 🚀 **v2.1**: three new skills, `paper-writer` (evidence-gated paper drafting), `paper-polish` (meaning-preserving polishing), and `deep-research` (survey-grade literature investigation); `intro-drafter` now outputs prose; paradigm-aware routing lands in the evaluation and review skills. See the [CHANGELOG](CHANGELOG.md).
