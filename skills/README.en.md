@@ -1,4 +1,4 @@
-# Skills: a reader's guide to the eleven executable skills
+# Skills: a reader's guide to the twelve executable skills
 
 English · [中文](README.md)
 
@@ -12,14 +12,14 @@ Supervisor-Skills is layered by audience:
 |---|---|---|
 | Top-level [`README.en.md`](../README.en.md) | First-time visitors | Why the project exists, tutorial structure, how to install |
 | [`handbook/`](../handbook/) (Chinese, canonical) / [`handbook-en/`](../handbook-en/) (English mirror) | Readers who want the methodology | Six chapters of research and writing handbook (the theoretical spine) |
-| **This file** | Readers who want the skills directly | **What each of the 11 skills is, when to use it, how it chains with the others** |
+| **This file** | Readers who want the skills directly | **What each of the 12 skills is, when to use it, how it chains with the others** |
 | `SKILL.md` (inside each skill directory) | Agent runtimes / LLMs | Executable spec: integrity gates, output formats, mode options — machine-readable, not optimised for human browsing |
 
 In one line: **the handbook teaches the way, SKILL.md runs the tool, this README is the bridge between them.**
 
 ## Two narrative tracks: technical paper vs benchmark paper
 
-The eleven skills are not isolated tools. They map to two complete lifecycles of a top-venue paper and add survey-grade research, evidence-gated drafting and polishing, and an execution-oriented Draw.io reconstruction capability. Locate yourself on the right track first, then pick the skill you need.
+The twelve skills are not isolated tools. They map to two complete lifecycles of a top-venue paper and add survey-grade research, evidence-gated drafting and polishing, an execution-oriented Draw.io reconstruction capability, and post-submission rebuttal guidance. Locate yourself on the right track first, then pick the skill you need.
 
 ### Track 1: technical / position paper (new method for an existing problem)
 
@@ -34,6 +34,8 @@ Following the natural order a PhD student takes for their first top-venue paper:
 7. **[paper-polish](paper-polish/SKILL.md)** — meaning-preserving language polish: AI-tone removal, claim calibration, Chinese-to-English rewriting
 8. **[pre-submission-reviewer](pre-submission-reviewer/SKILL.md)** — the 3-to-5-day deadline-window audit
 
+**After submission**: when the reviews arrive, hand them to **[rebuttal-guidance](rebuttal-guidance/SKILL.md)** to plan a response to each concern (it gives guidance, not paste-ready rebuttal prose).
+
 **Two cross-cutting tools**, orthogonal to the eight steps above:
 
 - [deep-research](deep-research/SKILL.md) — survey-grade literature investigation, usable before topic selection or at any point while writing: multi-perspective search, per-citation verification, a report that answers explicit research questions
@@ -43,7 +45,7 @@ Following the natural order a PhD student takes for their first top-venue paper:
 
 The benchmark pipeline is more strictly sequential than the technical-paper track: each stage gates the next. **[benchmark-paper-template](benchmark-paper-template/SKILL.md)** is the orchestrator for this track: a single skill bundles the full six-stage workflow (Gap → Design → Construction → Experiments → Paper Structure → Checklist) and produces the five-pillar framework (Research Gap, Construction Pipeline, Evaluation Framework, Empirical Findings, optional Companion Method).
 
-For a benchmark paper, the starting and ending point are both this one skill; the two core figures additionally need figure-designer, existing reference images or screenshots can be executed with drawio-reconstruction, and the pre-submission audit still lands on pre-submission-reviewer.
+For a benchmark paper, the starting and ending point are both this one skill; the two core figures additionally need figure-designer, existing reference images or screenshots can be executed with drawio-reconstruction, the pre-submission audit still lands on pre-submission-reviewer, and rebuttal planning after the reviews arrive goes to rebuttal-guidance.
 
 ### Already stuck somewhere?
 
@@ -57,10 +59,11 @@ Readers with a specific bottleneck can skip the reading order and jump straight 
 - Figures look clumsy, not sure which tool to use → **figure-designer**
 - Have a reference figure, paper figure, architecture diagram, or screenshot and need editable Draw.io → **drawio-reconstruction**
 - Pre-submission panic, unclear what to check → **pre-submission-reviewer**
+- Reviews are in and you do not know how to answer each point, or in what tone → **rebuttal-guidance**
 - Cannot articulate the benchmark gap or organise evaluation dimensions → **benchmark-paper-template**
 - Unsure how to delegate to AI without diluting academic judgment → **vibe-research-workflow**
 
-## The eleven skill cards
+## The twelve skill cards
 
 Each card translates the SKILL.md spec into plain-reader language, adds the matching handbook chapters, and notes the upstream/downstream skills.
 
@@ -185,6 +188,20 @@ Each card translates the SKILL.md spec into plain-reader language, adds the matc
 - **Matching handbook chapters**: [3.5 Writing details and checklist](../handbook-en/03_Paper_Writing/3.5_writing-details-and-checklist.md) · [1.1 How to evaluate paper quality](../handbook-en/01_Preliminary/1.1_how-to-evaluate-paper-quality.md)
 - **Upstream**: the endpoint of the technical-paper track; also the endpoint of the benchmark-paper track.
 
+### rebuttal-guidance — rebuttal strategy matched to the reviewer's mindset
+
+- **Positioning**: the post-submission skill. Built on a conditional persuasion model P(Z|X,Y): infer the reviewer's mindset X from the review text, match a rebuttal strategy Y, and raise the chance of Z (a score increase or acceptance). It returns actionable guidance for every Weakness / Question and **does not write paste-ready rebuttal prose**; the author writes the final text.
+- **When to trigger**:
+  - You paste Weaknesses / Questions from ICLR, NeurIPS, ICML, EMNLP, or similar venues and want a structured response plan first
+  - You are not sure how to answer one specific comment (say, R1.W2)
+  - You are unsure which tone and evidence strategy fit a harsh reviewer versus an open one
+  - The reviewer ignored your rebuttal and you want to recalibrate
+- **Seven steps**: inventory every W/Q → classify each concern (misunderstanding, evidence gap, novelty, baseline fairness, scope claim, writing clarity, theory, efficiency, other) → match the reviewer to a mindset cluster from behaviour signals → read off the strategy priorities for that mindset → emit a guidance block per concern → run the integrity gate → assemble the output.
+- **Key discipline**: never fabricate experimental numbers; anything unverified is marked `[TO VERIFY]`; defensive phrasing (e.g. "you misunderstood") is flagged; overpromise risk is flagged for scope-claim and evidence-gap concerns; when the user asks for full rebuttal text, guidance still comes first, with a warning against pasting LLM output blindly.
+- **Output**: a `## Rebuttal Guidance` section with a reviewer-mindset summary (cluster, confidence, the phrases that triggered the match), three to five global strategy priorities, a guidance block per concern (concern type, mindset-aware strategy, response structure, whether to point to the paper or run a new experiment, tone note, template A / B / C, what to avoid), and integrity-checklist results.
+- **Matching handbook chapter**: none yet (the rebuttal guide is still on the top-level README's TODO list).
+- **Up- and downstream**: upstream is the reviews you receive after submission; once the rebuttal is drafted, **pre-submission-reviewer** can give it another sweep. Idea evaluation routes to **idea-evaluator**, and pre-submission review routes to **pre-submission-reviewer**.
+
 ### vibe-research-workflow — the always-on rules for AI-assisted research
 
 - **Positioning**: a full-lifecycle guide for AI-assisted research, covering three sub-flows: Vibe Coding, Vibe Figure, Vibe Writing.
@@ -196,7 +213,7 @@ Each card translates the SKILL.md spec into plain-reader language, adds the matc
 - **Core principle**: **keep academic judgment in the human's hands, delegate mechanical labour to AI**; every AI output must come with checkable evidence; tool picks are per task type with a concrete shortlist.
 - **Output**: a recommended tool chain for the current scenario, a human-AI division-of-labour sketch, and a common-failure-mode catalogue.
 - **Matching handbook chapters**: [5.1 Vibe Research and Vibe Coding primer](../handbook-en/05_Vibe_Research/5.1_vibe-research-and-vibe-coding.md) · [5.2 Practitioner notes](../handbook-en/05_Vibe_Research/5.2_liboyan-practical-notes.md)
-- **How it fits**: **orthogonal** to the other ten skills. It is not step N; it is a rulebook you pull up at any step. Drafting requests are legitimate: they route to paper-writer / intro-drafter, whose evidence discipline forbids fabricated substance; disclosure and per-passage verification duties stay with the author.
+- **How it fits**: **orthogonal** to the other eleven skills. It is not step N; it is a rulebook you pull up at any step. Drafting requests are legitimate: they route to paper-writer / intro-drafter, whose evidence discipline forbids fabricated substance; disclosure and per-passage verification duties stay with the author.
 
 ## How to actually use these skills
 
@@ -213,6 +230,7 @@ Follow the [Quick Start](../README.en.md#quick-start) in the top-level README. O
 - "how should I draw this figure / what tool should I use" → `figure-designer`
 - "rebuild this reference image as draw.io / generate editable drawio" → `drawio-reconstruction`
 - "review the paper before I submit / final pass" → `pre-submission-reviewer`
+- "the reviews are in, help me plan the rebuttal / how do I answer R1.W2" → `rebuttal-guidance`
 - "I am writing a benchmark paper / I am doing an evaluation paper" → `benchmark-paper-template`
 - "how do I use AI to assist my research" → `vibe-research-workflow`
 
@@ -238,6 +256,7 @@ Each skill's `references/` directory carries on-demand depth. For example, `idea
 | figure-designer | 4.1 / 4.2 / 4.3 / 4.4 |
 | drawio-reconstruction | 4.4 / VCG-Bench |
 | pre-submission-reviewer | 3.5 / 1.1 |
+| rebuttal-guidance | none yet (the rebuttal guide is still on the top-level README TODO list) |
 | vibe-research-workflow | 5.1 / 5.2 |
 
 **Recommended reading order: read the handbook once to build intuition about the "way", then come back to this README to pick the skill for your scenario; leave execution to SKILL.md.**

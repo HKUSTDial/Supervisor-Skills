@@ -1,6 +1,6 @@
 # Supervisor-Skills
 
-> A PhD-level academic research methodology distilled into eleven structured skills, covering research discovery, idea evaluation, paper planning, drafting, polishing, figure design and reconstruction, pre-submission review, and AI-assisted research workflow. Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `handbook-en/`, or as Agent Skills under `skills/`.
+> A PhD-level academic research methodology distilled into twelve structured skills, covering research discovery, idea evaluation, paper planning, drafting, polishing, figure design and reconstruction, pre-submission review, rebuttal guidance, and AI-assisted research workflow. Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `handbook-en/`, or as Agent Skills under `skills/`.
 
 Target audience: researchers writing papers for NeurIPS, ICML, ICLR, VLDB, SIGMOD, KDD, ACL, EMNLP, CVPR, and similar top venues.
 
@@ -22,7 +22,7 @@ See [README.md](README.md) (Chinese) or [README.en.md](README.en.md) for full de
 
 ## Skills (v2.1.0)
 
-Eleven anchor skills under `skills/` cover the full paper lifecycle.
+Twelve anchor skills under `skills/` cover the full paper lifecycle.
 
 - [deep-research](skills/deep-research/SKILL.md): survey-grade literature investigation with multi-perspective search, per-citation verification, MECE synthesis, and a report that answers explicit research questions.
 - [idea-evaluator](skills/idea-evaluator/SKILL.md): scores a research idea on the five-dimension framework (Higher / Faster / Stronger / Cheaper / Broader) plus lifecycle-capability matching, fatal-flaws audit, and paradigm-shift probe; non-STEM ideas route to substitute frameworks.
@@ -35,6 +35,7 @@ Eleven anchor skills under `skills/` cover the full paper lifecycle.
 - [figure-designer](skills/figure-designer/SKILL.md): paradigm selection and quality audit for motivated-example, solution-overview, and experimental-results figures.
 - [drawio-reconstruction](skills/drawio-reconstruction/SKILL.md): rebuilds reference images, paper figures, and screenshots into editable Draw.io files with PNG previews and visual audits.
 - [pre-submission-reviewer](skills/pre-submission-reviewer/SKILL.md): paradigm-aware reviewer self-check covering macro logic, writing detail, grammar, LaTeX format, and figure quality, with retrieval-grounded novelty and citation-completeness checks.
+- [rebuttal-guidance](skills/rebuttal-guidance/SKILL.md): per-concern rebuttal guidance (not paste-ready prose) from a conditional persuasion model that matches the reviewer's mindset to a strategy, with concern classification, evidence pointers, tone notes, and an integrity checklist that forbids fabricated numbers.
 
 ## Reader curriculum
 

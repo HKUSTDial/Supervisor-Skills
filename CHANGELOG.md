@@ -4,6 +4,20 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- `rebuttal-guidance`: per-concern peer-review rebuttal guidance built on
+  a conditional persuasion model (reviewer mindset X, strategy Y). It
+  plans each response rather than writing rebuttal prose.
+
+### Fixed
+
+- Skill docs now cover all twelve skills under `skills/`:
+  `skills/README.md`, `skills/README.en.md`, `README.en.md`, `llms.txt`,
+  and `CONTRIBUTING.md` list `rebuttal-guidance` and no longer say eleven.
+
 ## [2.1.0] - 2026-07-10
 
 ### Added

@@ -144,6 +144,7 @@ Supervisor-Skills/
 │   ├── paper-polish/
 │   ├── pre-submission-reviewer/
 │   ├── figure-designer/
+│   ├── rebuttal-guidance/
 │   └── drawio-reconstruction/
 │
 └── assets/                            # Image assets
@@ -183,6 +184,7 @@ This is the core of the repository. The theoretical experience above is distille
 | **Pre-Submission Reviewer** | Reviewer's perspective at a top venue — runs a full review over your draft based on the writing checklist and common English grammar pitfalls. | [Use skill](skills/pre-submission-reviewer/SKILL.md) |
 | **Figure Design Advisor** | Tell the AI what you want to express; it returns professional drawing advice based on the motivated / overview / experimental figure paradigms. | [Use skill](skills/figure-designer/SKILL.md) |
 | **Draw.io Reconstruction** | Rebuild reference images, paper figures, architecture diagrams, slide diagrams, or UI screenshots into editable `.drawio` files with PNG previews and visual audits. | [Use skill](skills/drawio-reconstruction/SKILL.md) |
+| **Rebuttal Guidance** | Built on a conditional persuasion model: identifies the reviewer's mindset (X), matches a rebuttal strategy (Y), and generates actionable response guidance for every Weakness / Question, with concern classification, tone advice, evidence pointers, and an integrity check. | [Use skill](skills/rebuttal-guidance/SKILL.md) |
 
 ## Quick Start
 

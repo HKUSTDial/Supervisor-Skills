@@ -12,14 +12,14 @@ Supervisor-Skills 的内容被分成三层，各有各的读者：
 |---|---|---|
 | 顶层 [`README.md`](../README.md) | 第一次打开项目的人 | 为什么做这个项目、教程结构、怎么装 |
 | [`handbook/`](../handbook/) | 想系统学方法论的人 | 六章科研与写作系统指南（理论主轴） |
-| **本文件** | 想直接上手技能的人 | 11 个技能**分别是什么、什么时候用、怎么接龙** |
+| **本文件** | 想直接上手技能的人 | 12 个技能**分别是什么、什么时候用、怎么接龙** |
 | `SKILL.md`（每个技能目录内） | Agent runtime / LLM | 可执行规范：完整性核查、输出格式、模式选项（机器可读，人看有点累） |
 
 一句话：**handbook 教"道"，SKILL.md 跑"器"，本 README 是"道器之间的桥"。**
 
 ## 两条主线：技术论文 vs Benchmark 论文
 
-11 个技能不是一堆孤立工具，它们对应两条完整的论文生命周期，并补上研究侧的深度调研、产出侧的正文写作与润色，以及 Draw.io 重建这一类执行型作图能力。先定位自己在写哪种论文，再决定从哪个技能入手。
+12 个技能不是一堆孤立工具，它们对应两条完整的论文生命周期，并补上研究侧的深度调研、产出侧的正文写作与润色、Draw.io 重建这一类执行型作图能力，以及投稿后的 rebuttal 指导。先定位自己在写哪种论文，再决定从哪个技能入手。
 
 ### 主线一：技术类 / 立场类论文（新方法解决已有问题）
 
@@ -34,6 +34,8 @@ Supervisor-Skills 的内容被分成三层，各有各的读者：
 7. **[paper-polish](paper-polish/SKILL.md)** — 忠于原意的语言润色：去 AI 腔、把握分寸、中译英
 8. **[pre-submission-reviewer](pre-submission-reviewer/SKILL.md)** — 投稿截止前 3 到 5 天的最终审核
 
+**投稿之后**：审稿意见出来后，交给 **[rebuttal-guidance](rebuttal-guidance/SKILL.md)** 逐条规划回应策略（它给的是指导，不是可直接粘贴的 rebuttal 正文）。
+
 **两个横向工具**，和上面八步**正交**，不是第 9 步：
 
 - [deep-research](deep-research/SKILL.md) — 选题前或写作中随时可用的综述级文献调研：多视角检索、逐条引用核验、回答明确研究问题的 survey 报告
@@ -43,7 +45,7 @@ Supervisor-Skills 的内容被分成三层，各有各的读者：
 
 Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于下一个完成。**[benchmark-paper-template](benchmark-paper-template/SKILL.md)** 是这条主线上的编排器：一份技能内置了"Gap → Design → Construction → Experiments → Paper Structure → Checklist"六阶段的完整思考支撑，按当前阶段自动定位并输出对应的五大支柱（Research Gap / Construction Pipeline / Evaluation Framework / Empirical Findings / 可选的 Companion Method）。
 
-写 Benchmark 论文，起点与终点都是这一个技能；两张核心图的设计需要额外调用 figure-designer，已有参考图或截图的 Draw.io 执行可以交给 drawio-reconstruction，投稿前的细节审核仍然落在 pre-submission-reviewer。
+写 Benchmark 论文，起点与终点都是这一个技能；两张核心图的设计需要额外调用 figure-designer，已有参考图或截图的 Draw.io 执行可以交给 drawio-reconstruction，投稿前的细节审核仍然落在 pre-submission-reviewer，收到审稿意见后的 rebuttal 规划交给 rebuttal-guidance。
 
 ### 已经卡在某一环？
 
@@ -57,10 +59,11 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - 图画得别扭，不知道用什么工具 → **figure-designer**
 - 已有参考图、论文图、架构图或截图，想生成可编辑 Draw.io → **drawio-reconstruction**
 - 投稿前慌，不知道该查什么 → **pre-submission-reviewer**
+- 审稿意见出来了，不知道每条该怎么回、用什么语气 → **rebuttal-guidance**
 - Benchmark 的 gap 说不清、评估维度理不顺 → **benchmark-paper-template**
 - AI 辅助科研的规则拿不准 → **vibe-research-workflow**
 
-## 11 张技能卡片
+## 12 张技能卡片
 
 每张卡把 SKILL.md 的严谨定义翻译成"人话"，附带配套的 handbook 章节以及与其它技能的接龙关系。
 
@@ -185,6 +188,20 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - **对应 handbook 章节**：[3.5 写作细节与 Checklist](../handbook/03_Paper_Writing/3.5_写作细节与Checklist.md) · [1.1 如何评价一篇论文的质量](../handbook/01_Preliminary/1.1_如何评价一篇论文的质量.md)
 - **上游**：技术论文主线的终点；Benchmark 论文主线的终点。
 
+### rebuttal-guidance — 按审稿人心态定制的 Rebuttal 策略
+
+- **定位**：投稿之后的技能。以条件说服模型 P(Z|X,Y) 为核心：从审稿意见推断审稿人心态 X，匹配 rebuttal 策略 Y，以提高 Z（分数上调或论文被接收）的概率；为每条 Weakness / Question 给出可执行的回应指导，**不直接产出可粘贴的 rebuttal 正文**，终稿由作者自己写。
+- **什么时候触发**：
+  - 把 ICLR、NeurIPS、ICML、EMNLP 等会议的 Weaknesses / Questions 贴进来，想先拿到一份结构化的回应计划
+  - 不知道某一条具体意见（比如 R1.W2）该怎么回
+  - 拿不准面对严厉型和开放型审稿人分别该用什么语气、拿什么证据
+  - 审稿人不理你的 rebuttal，想重新校准策略
+- **七步流程**：盘点所有 W/Q → 给每条 concern 分类（误解、证据缺口、新颖性、基线公平性、范围声明、写作清晰度、理论、效率、其他）→ 按行为信号匹配审稿人心态簇 → 读出该心态下的策略优先级 → 逐条输出指导块 → 完整性检查 → 汇总输出。
+- **关键纪律**：绝不编造实验数字，未核实的内容一律标 `[TO VERIFY]`；标出防御性措辞（如 "you misunderstood"）；对范围声明类和证据缺口类 concern 提示过度承诺风险；用户只想要整段正文时，也先给指导，并提醒不要直接粘贴 LLM 生成的文本。
+- **产出**：`## Rebuttal Guidance` 一节，包括审稿人心态摘要（簇名、置信度、触发匹配的原文短语）、3-5 条全局策略优先级、逐条指导块（concern 类型、心态适配策略、回应结构、是否需要回论文找证据或补实验、语气提示、模板 A / B / C、需要避免的写法），以及完整性检查结果。
+- **对应 handbook 章节**：暂无专门章节（rebuttal 指南仍列在顶层 README 的 TODO 中）。
+- **上下游**：上游是投稿后收到的审稿意见；rebuttal 写完后可以交给 **pre-submission-reviewer** 再扫一遍。评估新 idea 转 **idea-evaluator**，投稿前审稿转 **pre-submission-reviewer**。
+
 ### vibe-research-workflow — 贯穿始终的 AI 协作行为守则
 
 - **定位**：AI 辅助科研的全流程指南，覆盖三条子流水线——Vibe Coding、Vibe Figure、Vibe Writing。
@@ -196,7 +213,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - **核心原则**：**学术判断保留在人手里，把机械劳动交给 AI**；每次 AI 产出都要有明确的可复核证据；工具选型按任务类型落到具体清单。
 - **产出**：当前场景的推荐工具链、人机分工示意、常见失败模式对照表。
 - **对应 handbook 章节**：[5.1 Vibe Research 与 Vibe Coding 入门](../handbook/05_Vibe_Research/5.1_Vibe_Research与Vibe_Coding入门.md) · [5.2 实战经验分享](../handbook/05_Vibe_Research/5.2_李伯岩实战经验分享与会议纪要.md)
-- **用法特点**：与其它十个技能**正交**。不是第 N 步，而是你走每一步时都可以随时调用的协作规则。写作类请求（起草正文）是合法的：转给 paper-writer / intro-drafter，它们的证据纪律保证不编造实质内容；披露义务与逐段核验义务不变。
+- **用法特点**：与其它十一个技能**正交**。不是第 N 步，而是你走每一步时都可以随时调用的协作规则。写作类请求（起草正文）是合法的：转给 paper-writer / intro-drafter，它们的证据纪律保证不编造实质内容；披露义务与逐段核验义务不变。
 
 ## 怎么用这些技能
 
@@ -213,6 +230,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 - "这张图应该怎么画 / 用什么工具画" → `figure-designer`
 - "把这张参考图重建成 draw.io / 生成可编辑 drawio" → `drawio-reconstruction`
 - "投稿前帮我审一遍 / 做最后的 final pass" → `pre-submission-reviewer`
+- "审稿意见出来了，帮我规划 rebuttal / R1.W2 这条该怎么回" → `rebuttal-guidance`
 - "我想写一个 Benchmark 论文 / 我在做 evaluation" → `benchmark-paper-template`
 - "怎么用 AI 辅助我做研究" → `vibe-research-workflow`
 
@@ -238,6 +256,7 @@ Benchmark 管线比技术论文更强调阶段先后，每个环节都要先于�
 | figure-designer | 4.1 / 4.2 / 4.3 / 4.4 |
 | drawio-reconstruction | 4.4 / VCG-Bench |
 | pre-submission-reviewer | 3.5 / 1.1 |
+| rebuttal-guidance | 暂无（rebuttal 指南仍在顶层 README 的 TODO 中） |
 | vibe-research-workflow | 5.1 / 5.2 |
 
 **阅读顺序建议：handbook 先读一遍建立"道"的直觉，再回到本 README 按技能挑场景使用；具体执行交给 SKILL.md。**
