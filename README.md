@@ -6,7 +6,7 @@
 
 # Supervisor-Skills: 将博导十年科研经验，炼化为你的 AI 副导师。
 
-[English](README.en.md) · 中文
+[English](README.en.md) · 中文 · [日本語](README.ja.md)
 
 <p align="center">
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/stargazers"><img src="https://img.shields.io/github/stars/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub stars"></a>
