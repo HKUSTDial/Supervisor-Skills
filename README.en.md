@@ -204,6 +204,31 @@ Install the DeepSeek-Ducktor plugin for me: https://github.com/HKUSTDial/DeepSee
 Follow the steps in the "Install and quick start" section of docs/README.en.md in that repository, then tell me how to start.
 ```
 
+## 🔗 Related open-source projects
+
+Beyond research ideas and paper writing, the projects below bring these methods into your agent, and help you analyze data and present your results.
+
+### 🎓 Ducktor and DeepSeek-Ducktor: an agent-native research mentor
+
+Ducktor is the next project in the Supervisor series. While the agent moves your research forward, Ducktor takes each step apart for you: what judgment the step made, what the common practice is and how experienced researchers think about it, and under what conditions the judgment does not hold. Decisions and the principles you can take away are kept in the project's `.duck/` folder; type `/duck-learn` to look back on a stage of work, and `/duck-why` to ask why a step was done that way.
+
+- [Ducktor](https://github.com/HKUSTDial/Ducktor): a plugin for Claude Code and Codex (in Codex the commands look like `$duck:duck-learn`); Cursor, Gemini CLI and similar tools can use it by copying its AGENTS.md.
+- [DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor): a native plugin for DeepSeek Harness, with the same commands and rules as Ducktor.
+
+### 📊 DataMagic: animated charts and data stories
+
+When you prepare a group meeting, a paper talk or a project demo, pick a case from DataMagic's recipe library of animated charts, and use the matching `datamagic` Skill to turn trends, rankings and comparisons into animations and data stories.
+
+Pick a recipe, copy its implementation prompt, and hand it to a coding agent such as Claude Code, Cursor or Codex; then swap in your own data and adjust the result.
+
+[GitHub repository](https://github.com/HKUSTDial/DataMagic)
+
+### 🔍 DeepEye: a data analysis agent
+
+Given files, databases and other data sources, DeepEye plans and runs multi-step analysis workflows and produces analysis reports, interactive dashboards and data videos. You can watch the execution and step in to adjust it.
+
+[GitHub repository](https://github.com/HKUSTDial/DeepEye)
+
 ## Contributing & feedback
 
 This is an open-source AI-skill project that tries to solve the "easy to use + compliant" problem for agent-driven research assistance.
