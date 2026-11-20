@@ -4,6 +4,17 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project
 adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- The `license` field in the SKILL.md frontmatter of six skills
+  (`benchmark-paper-template`, `figure-designer`, `idea-evaluator`,
+  `pre-submission-reviewer`, `tech-paper-template`,
+  `vibe-research-workflow`) still said `CC-BY-4.0` from before the
+  license change in 2.0.0. They now say `CC-BY-NC-SA-4.0`, the same as
+  `LICENSE`. `drawio-reconstruction` keeps its MIT License.
+
 ## [2.1.0] - 2026-07-10
 
 ### Added

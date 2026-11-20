@@ -9,7 +9,7 @@ description: >-
   asks whether it is worth pursuing, asks to 'evaluate this idea', 'score
   this idea', 'assess feasibility', 'novelty check', 'is this a good
   research direction', or before committing to a paper scope.
-license: CC-BY-4.0
+license: CC-BY-NC-SA-4.0
 ---
 
 # Idea Evaluator

@@ -9,7 +9,7 @@ description: >-
   to use AI for research', 'Vibe Coding tips', 'AI-assisted writing
   workflow', 'which AI tool for this', or starts an AI-assisted work
   session.
-license: CC-BY-4.0
+license: CC-BY-NC-SA-4.0
 ---
 
 # Vibe Research Workflow

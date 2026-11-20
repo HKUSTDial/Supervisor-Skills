@@ -9,7 +9,7 @@ description: >-
   'design a figure', 'draw Figure 1', 'plot experiment results',
   'choose the right chart type', 'which figure tool to use', or
   'figure looks unprofessional'.
-license: CC-BY-4.0
+license: CC-BY-NC-SA-4.0
 ---
 
 # Figure Designer

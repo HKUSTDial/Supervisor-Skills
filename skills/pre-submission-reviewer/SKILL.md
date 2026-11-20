@@ -9,7 +9,7 @@ description: >-
   this paper', 'audit before submission', 'check the draft', 'find
   issues', 'proofread', or within one week of a submission
   deadline.
-license: CC-BY-4.0
+license: CC-BY-NC-SA-4.0
 ---
 
 # Pre-Submission Reviewer

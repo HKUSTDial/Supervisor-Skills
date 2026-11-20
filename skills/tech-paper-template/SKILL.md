@@ -9,7 +9,7 @@ description: >-
   discussing progress with an advisor, or planning the paper before
   drafting. Also use for 'paper skeleton', 'paper logic chain',
   'thinking template', 'paper-structure planning'.
-license: CC-BY-4.0
+license: CC-BY-NC-SA-4.0
 ---
 
 # Tech Paper Template
