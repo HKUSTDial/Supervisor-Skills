@@ -16,7 +16,7 @@
 
 ## 📰 News
 
-> - **[2026-11-05]** 🎓 Supervisor 系列续作 **[Ducktor](https://github.com/yinwu01/Ducktor)** 与 **[DeepSeek-Ducktor](https://github.com/yinwu01/DeepSeek-Ducktor)** 正式发布！🚀 在 vibe research 的浪潮下，Agent 替你推进研究，Ducktor 把每一步背后的科研判断讲给你，补全研究者的知识闭环 🔁，让 Agent 与你一起学习、协同进化 🌱。
+> - **[2026-11-05]** 🎓 Supervisor 系列续作 **[Ducktor](https://github.com/HKUSTDial/Ducktor)** 与 **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)** 正式发布！🚀 在 vibe research 的浪潮下，Agent 替你推进研究，Ducktor 把每一步背后的科研判断讲给你，补全研究者的知识闭环 🔁，让 Agent 与你一起学习、协同进化 🌱。
 > - **[2026-09-21]** 🤝 Supervisor-Skills 与**百度**达成合作，作为专家深度嵌入**库库AI**平台，以「[**计算机科研专家 骆教授**](https://kuku.baidu.com/#/workbench/expert)」的形象呈现。
 > - **[2026-07-15]** 🤝 团队与**豆包**达成合作，Supervisor-Skills 正式作为**豆包·办公模式**的核心科研技能完成部署，驱动「**科研评估**」与「**学术创作**」两大官方能力，将本项目沉淀的科研方法论带给亿级用户。
 > - **[2026-07-10]** 🚀 **v2.1**：新增 `paper-writer`（证据门控的论文正文写作）、`paper-polish`（忠于原意的语言润色）、`deep-research`（综述级文献调研）三个技能；`intro-drafter` 升级为正文输出；评估与评审技能引入学科范式路由。详见 [CHANGELOG](CHANGELOG.md)。
@@ -185,9 +185,22 @@ Supervisor-Skills/
 Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
+想让这些科研方法更原生地跟着 Agent 走，可以装 **[Ducktor](https://github.com/HKUSTDial/Ducktor)**：它以 Supervisor-Skills 为底，做成 Claude Code、Codex 的原生插件，常驻在你的项目里，Agent 干活时把每一步背后的科研判断讲给你。用 DeepSeek Harness 的，装 **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)**。同样一句话交给 AI 助手：
+
+```
+帮我安装 Ducktor 插件：https://github.com/HKUSTDial/Ducktor
+```
+
 ## 🔗 相关开源项目
 
-除了科研构思与论文写作，下面两个项目可以帮助你进一步分析数据、呈现研究结果。
+除了科研构思与论文写作，下面几个项目可以把这套方法带进你的 Agent，也可以帮助你进一步分析数据、呈现研究结果。
+
+### 🎓 Ducktor 与 DeepSeek-Ducktor：Agent 原生的科研导师
+
+Ducktor 是 Supervisor 系列的续作。Agent 替你推进研究时，Ducktor 把每一步拆开讲给你：这一步做了什么判断、常见做法和有经验的人会怎么想、什么条件下这个判断不成立。决策和带得走的原则记进项目里的 `.duck/`；敲 `/duck-learn` 复盘一段工作，敲 `/duck-why` 追问某一步为什么这样做。
+
+- [Ducktor](https://github.com/HKUSTDial/Ducktor)：Claude Code 和 Codex 的插件。
+- [DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)：DeepSeek Harness 的原生插件，命令和规则与 Ducktor 一致。
 
 ### 📊 DataMagic：动态图表与数据故事
 
