@@ -8,7 +8,7 @@
 
 > From idea conception to paper submission, covering the full research lifecycle.
 
-English · [中文](README.md)
+English · [中文](README.md) · [日本語](README.ja.md)
 
 <p align="center">
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/stargazers"><img src="https://img.shields.io/github/stars/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub stars"></a>
