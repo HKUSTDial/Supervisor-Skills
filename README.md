@@ -185,10 +185,16 @@ Supervisor-Skills/
 Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
-想让这些科研方法更原生地跟着 Agent 走，可以装 **[Ducktor](https://github.com/HKUSTDial/Ducktor)**：它以 Supervisor-Skills 为底，做成 Claude Code、Codex 的原生插件，常驻在你的项目里，Agent 干活时把每一步背后的科研判断讲给你。用 DeepSeek Harness 的，装 **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)**。同样一句话交给 AI 助手：
+想要 Agent 原生的用法，可以装 **[Ducktor](https://github.com/HKUSTDial/Ducktor)**：它以 Supervisor-Skills 为底，做成 Claude Code、Codex 的原生插件。装好后在项目里敲一次 `/duck on`，Agent 干活时，Ducktor 把每一步背后的科研判断讲给你。用 DeepSeek Harness 的，装 **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)**。把对应的一段发给 AI 助手：
 
 ```
 帮我安装 Ducktor 插件：https://github.com/HKUSTDial/Ducktor
+照仓库里 INSTALL.md 的步骤装好，装完告诉我怎么开始用。
+```
+
+```
+帮我安装 DeepSeek-Ducktor 插件：https://github.com/HKUSTDial/DeepSeek-Ducktor
+照仓库 README 里「安装与快速开始」一节的步骤装好，装完告诉我怎么开始用。
 ```
 
 ## 🔗 相关开源项目
@@ -199,7 +205,7 @@ Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-S
 
 Ducktor 是 Supervisor 系列的续作。Agent 替你推进研究时，Ducktor 把每一步拆开讲给你：这一步做了什么判断、常见做法和有经验的人会怎么想、什么条件下这个判断不成立。决策和带得走的原则记进项目里的 `.duck/`；敲 `/duck-learn` 复盘一段工作，敲 `/duck-why` 追问某一步为什么这样做。
 
-- [Ducktor](https://github.com/HKUSTDial/Ducktor)：Claude Code 和 Codex 的插件。
+- [Ducktor](https://github.com/HKUSTDial/Ducktor)：Claude Code 和 Codex 的插件（Codex 里命令写成 `$duck:duck-learn` 这样）；Cursor、Gemini CLI 等可以复制它的 AGENTS.md 使用。
 - [DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)：DeepSeek Harness 的原生插件，命令和规则与 Ducktor 一致。
 
 ### 📊 DataMagic：动态图表与数据故事

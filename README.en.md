@@ -192,10 +192,16 @@ Paste the following prompt into your AI assistant (Claude Code, Cursor, Codex, a
 Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-Skills with Skills.
 ```
 
-For a more native, agent-native setup, install **[Ducktor](https://github.com/HKUSTDial/Ducktor)**. It builds on Supervisor-Skills as a native plugin for Claude Code and Codex: it stays in your project and, while the agent works, explains the research judgment behind each step. On DeepSeek Harness, install **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)**. The same one-line prompt works:
+For an agent-native setup, install **[Ducktor](https://github.com/HKUSTDial/Ducktor)**. It builds on Supervisor-Skills as a native plugin for Claude Code and Codex. After you type `/duck on` once in your project, Ducktor explains the research judgment behind each step while the agent works. On DeepSeek Harness, install **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)**. Send the matching prompt to your agent:
 
 ```
-Help me install the Ducktor plugin: https://github.com/HKUSTDial/Ducktor
+Install the Ducktor plugin for me: https://github.com/HKUSTDial/Ducktor
+Follow the steps in i18n/INSTALL.en.md in that repository, then tell me how to start.
+```
+
+```
+Install the DeepSeek-Ducktor plugin for me: https://github.com/HKUSTDial/DeepSeek-Ducktor
+Follow the steps in the "Install and quick start" section of docs/README.en.md in that repository, then tell me how to start.
 ```
 
 ## Contributing & feedback
