@@ -1,4 +1,4 @@
 interface:
   display_name: "Draw.io Reconstruction"
-  short_description: "Rebuild images as editable Draw.io with visual audits"
-  default_prompt: "Use $drawio-reconstruction to rebuild the provided diagram image or image folder as editable Draw.io files with PNG previews and visual-fidelity audits."
+  short_description: "Draw.io reconstruction with independent review loops"
+  default_prompt: "Use $drawio-reconstruction to rebuild this diagram image or folder into editable Draw.io files. For every image, keep production and acceptance separate. Each production or repair round uses a fresh Producer on the current artifacts; each acceptance round uses a different fresh read-only Reviewer. Only Reviewers may return PASS after checking icon assets or the full preview plus actual-placement icon sheet. Do not send work to completed agents because cached responses are not new turns. Repeat without a fixed time or round limit."

@@ -16,18 +16,22 @@
 配套 benchmark 仓库地址：
 https://github.com/sxy1499894281/VCG-Bench
 
+工作流包含两组独立验收的修复循环：Icon Producer 负责准备图标，另一个只读 Icon Reviewer 负责验收；完整重建同样由 Reconstruction Producer 和不同的只读 Reconstruction Reviewer 分工。每个 FIX 都会启动新的修复 Producer，修复后再启动新的 Reviewer，Producer 不能验收自己的工作。
+
+图标准备和最终嵌入验收图必须拆成小型 `icons-review*.png` / `placement-review*.png` 分片，每片最多 8 个图标，并使用真实 1:1、2x 视图及带 bbox 标记的源图/成品外围上下文。Reviewer 必须逐图标返回结论，不能只对一张超长总表笼统 PASS。
+
 ## 推荐复现配置
 
 本仓库中的示例重建，推荐使用以下参考配置：
 
 - Runtime：Codex
 - Model / mode：GPT-5.5 xhigh
-- 输入：`examples/` 目录中的原始 PNG
+- 输入：`examples/` 目录中的原始图片（PNG/JPG）
 - 输出：可编辑的 `.drawio` 文件和导出的 PNG 预览图
 
 这是我们建议用于复现 README 案例图的配置。你也可以用其他运行时、模型或更低的推理设置来做实验，但不应把这些配置视为等价复现条件，因为它们更容易遗漏小元素、在布局上漂移，或者生成保真度更低的 Draw.io 结构。
 
-复现时，建议把 `examples/<name>.png` 作为源图，并把导出预览图写到单独文件，例如 `examples/<name>.preview.png`，这样不会覆盖原始输入。
+复现时，建议使用 `examples/` 中对应的原始图片作为源图，并把导出预览图写到单独文件，例如 `examples/<name>_preview.png`，这样不会覆盖原始输入。
 
 ## 仓库内容
 
@@ -39,19 +43,22 @@ https://github.com/sxy1499894281/VCG-Bench
 | `scripts/check_drawio.py` | 检查 `.drawio` XML 结构、嵌入图像，以及常见重建问题。 |
 | `scripts/export_drawio.py` | 通过 Draw.io Desktop/CLI 将 `.drawio` 导出为 PNG。 |
 | `scripts/crop_assist.py` | 辅助从复杂参考图中裁出局部图像。 |
-| `requirements.txt` | `crop_assist.py` 使用的可选 Pillow 依赖。 |
 | `agents/openai.yaml` | 示例 agent 配置元数据。 |
-| `examples/` | 原始 PNG 输入，以及对应的示例 `.drawio` 文件。 |
+| `examples/` | 原始 PNG/JPG 输入，以及对应的示例 `.drawio` 文件。 |
 | `assets/` | README 中展示案例所需的图片资源。 |
 
 ## 重建案例
 
-下面的示例展示的是单轮 Codex + GPT-5.5 xhigh + skill 的重建结果。左侧是原始图，右侧是由重建后的 `.drawio` 导出的 PNG，并作为 README 展示图使用。
+下面的示例展示的是 Codex + GPT-5.5 xhigh + skill 在完成规定的独立修复与审查循环后的重建结果。左侧是原始图，右侧是由重建后的 `.drawio` 导出的 PNG，并作为 README 展示图使用。
 
 <table>
   <tr>
     <th width="50%">原图</th>
     <th width="50%">重建后的 Draw.io 导出图</th>
+  </tr>
+  <tr>
+    <td><img src="assets/cases/data_cn_original.png" alt="Chinese data-analysis workflow original"></td>
+    <td><img src="assets/cases/data_cn_drawio.png" alt="Chinese data-analysis workflow reconstructed Draw.io export"></td>
   </tr>
   <tr>
     <td><img src="assets/cases/data_lake_original.png" alt="Data lake original"></td>
@@ -65,41 +72,54 @@ https://github.com/sxy1499894281/VCG-Bench
     <td><img src="assets/cases/data_sci2_original.png" alt="Scientific data original"></td>
     <td><img src="assets/cases/data_sci2_drawio.png" alt="Scientific data reconstructed Draw.io export"></td>
   </tr>
+  <tr>
+    <td><img src="assets/cases/m1_original.png" alt="Biogeochemical process original"></td>
+    <td><img src="assets/cases/m1_drawio.png" alt="Biogeochemical process reconstructed Draw.io export"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/cases/m2_original.png" alt="Treatment selection matrix original"></td>
+    <td><img src="assets/cases/m2_drawio.png" alt="Treatment selection matrix reconstructed Draw.io export"></td>
+  </tr>
+  <tr>
+    <td><img src="assets/cases/m3_original.png" alt="Low-temperature nitrogen removal original"></td>
+    <td><img src="assets/cases/m3_drawio.png" alt="Low-temperature nitrogen removal reconstructed Draw.io export"></td>
+  </tr>
 </table>
 
 示例输入图和可编辑输出位于：
 
 ```text
+examples/data_cn.jpg
+examples/data_cn.drawio
 examples/data_lake.png
 examples/data_lake.drawio
 examples/data_man.png
 examples/data_man.drawio
 examples/data_sci2.png
 examples/data_sci2.drawio
+examples/m1.png
+examples/m1.drawio
+examples/m2.png
+examples/m2.drawio
+examples/m3.png
+examples/m3.drawio
 ```
 
 ## 作为 Codex Skill 安装
 
-应安装包含当前 `SKILL.md` 的目录，不要把 Supervisor-Skills 仓库根目录当成一个 skill 安装。使用 Codex 时，可直接发送：
-
-```text
-Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
-```
-
-如需手动安装，可把这个 skill 目录复制或软链接到 Codex 的 skill 发现目录：
+把这个仓库复制或软链接到你的 Codex skills 目录：
 
 ```bash
-mkdir -p ~/.agents/skills
-ln -s /absolute/path/to/Supervisor-Skills/skills/drawio-reconstruction ~/.agents/skills/drawio-reconstruction
+mkdir -p ~/.codex/skills
+ln -s /path/to/drawio-reconstruction-skill ~/.codex/skills/drawio-reconstruction
 ```
 
-Codex 也支持由 installer 或管理员管理的其他 skill 位置。本 skill 会根据实际安装目录定位辅助脚本，不依赖固定的 home 路径。之后让 Codex 对某张图或图片文件夹使用 `$drawio-reconstruction` 即可。如果新安装的 skill 没有出现，请重启 Codex。
+之后让 Codex 对某张图，或某个图片文件夹，使用 `drawio-reconstruction` 即可。
 
 ## 依赖要求
 
 - Codex，或其他能遵循 `SKILL.md` 的 agent。
 - Python 3.10+，用于运行辅助脚本。
-- 仅 `crop_assist.py` 需要 Pillow；在本 skill 目录执行 `python -m pip install -r requirements.txt` 即可安装。
 - Draw.io Desktop/CLI，用于把 `.drawio` 导出为 PNG。
 
 macOS：
@@ -110,30 +130,12 @@ brew install --cask drawio
 
 Ubuntu / Debian：
 
-从官方 [drawio-desktop releases](https://github.com/jgraph/drawio-desktop/releases) 下载匹配平台的 `.deb` 或 AppImage。下载 `.deb` 后可执行：
-
 ```bash
-sudo apt install ./drawio-amd64-*.deb
+sudo apt update
+sudo apt install drawio
 ```
 
-使用 AppImage 或其他非标准安装位置时，赋予执行权限并设置路径：
-
-```bash
-chmod +x /absolute/path/to/drawio.AppImage
-export DRAWIO_PATH=/absolute/path/to/drawio.AppImage
-```
-
-Windows PowerShell：
-
-```powershell
-$env:DRAWIO_PATH = "C:\Program Files\draw.io\draw.io.exe"
-```
-
-`export_drawio.py` 会依次检查 `--drawio-path`、`DRAWIO_PATH`、常见安装位置和 `PATH`。也可以为单次导出显式指定：
-
-```bash
-python scripts/export_drawio.py examples/data_lake.drawio examples/data_lake.preview.png --drawio-path /absolute/path/to/drawio
-```
+如果脚本没有自动识别到 Draw.io，可为支持该参数的脚本显式传入可执行文件路径，或设置 `DRAWIO_PATH` 环境变量。
 
 ## 批处理工作流
 
@@ -147,7 +149,7 @@ python scripts/batch_manifest.py path/to/images --output-dir path/to/output --wr
 
 ```text
 <stem>.drawio
-<stem>.png
+<stem>_preview.png
 <stem>.audit.md
 ```
 
@@ -160,7 +162,7 @@ python scripts/batch_verify.py path/to/output/drawio_batch_manifest.json
 导出单个 `.drawio` 文件：
 
 ```bash
-python scripts/export_drawio.py examples/data_lake.drawio examples/data_lake.preview.png
+python scripts/export_drawio.py examples/data_lake.drawio examples/data_lake_preview.png
 ```
 
 检查单个 `.drawio` 文件：
