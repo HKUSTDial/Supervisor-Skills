@@ -1,6 +1,6 @@
 # Supervisor-Skills
 
-> A PhD-level academic research methodology distilled into eleven structured skills, covering research discovery, idea evaluation, paper planning, drafting, polishing, figure design and reconstruction, pre-submission review, and AI-assisted research workflow. Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `handbook-en/`, or as Agent Skills under `skills/`.
+> A PhD-level academic research methodology distilled into ten structured skills, covering research discovery, idea evaluation, paper planning, drafting, polishing, figure design, pre-submission review, and AI-assisted research workflow. Usable as a standalone Chinese curriculum at `handbook/`, as an English mirror at `handbook-en/`, or as Agent Skills under `skills/`.
 
 Target audience: researchers writing papers for NeurIPS, ICML, ICLR, VLDB, SIGMOD, KDD, ACL, EMNLP, CVPR, and similar top venues.
 
@@ -15,14 +15,14 @@ Help me install every skill under the skills/ directory from https://github.com/
 To install only Draw.io reconstruction:
 
 ```
-Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
+Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/others/drawio-reconstruction.
 ```
 
 See [README.md](README.md) (Chinese) or [README.en.md](README.en.md) for full details.
 
 ## Skills (v2.1.0)
 
-Eleven anchor skills under `skills/` cover the full paper lifecycle.
+Ten anchor skills under `skills/` cover the full paper lifecycle.
 
 - [deep-research](skills/deep-research/SKILL.md): survey-grade literature investigation with multi-perspective search, per-citation verification, MECE synthesis, and a report that answers explicit research questions.
 - [idea-evaluator](skills/idea-evaluator/SKILL.md): scores a research idea on the five-dimension framework (Higher / Faster / Stronger / Cheaper / Broader) plus lifecycle-capability matching, fatal-flaws audit, and paradigm-shift probe; non-STEM ideas route to substitute frameworks.
@@ -33,8 +33,14 @@ Eleven anchor skills under `skills/` cover the full paper lifecycle.
 - [benchmark-paper-template](skills/benchmark-paper-template/SKILL.md): benchmark-paper five-pillar audit, six-part Introduction logic chain, Section 2-7 skeleton, and pre-submission checklist.
 - [paper-polish](skills/paper-polish/SKILL.md): meaning-preserving language polish, AI-tone removal, claim calibration, and Chinese-to-English rewriting, with meaning-risk edits flagged.
 - [figure-designer](skills/figure-designer/SKILL.md): paradigm selection and quality audit for motivated-example, solution-overview, and experimental-results figures.
-- [drawio-reconstruction](skills/drawio-reconstruction/SKILL.md): rebuilds reference images, paper figures, and screenshots into editable Draw.io files with PNG previews and visual audits.
 - [pre-submission-reviewer](skills/pre-submission-reviewer/SKILL.md): paradigm-aware reviewer self-check covering macro logic, writing detail, grammar, LaTeX format, and figure quality, with retrieval-grounded novelty and citation-completeness checks.
+
+## Other skills
+
+Skills contributed and maintained by outside authors live under `others/`. The `skills/` install prompt above does not include them; install each one by its directory path, as in the Draw.io prompt above.
+
+- [drawio-reconstruction](others/drawio-reconstruction/SKILL.md): rebuilds reference images, paper figures, and screenshots into editable Draw.io files with PNG previews and visual audits.
+- [rebuttal-guidance](others/rebuttal-guidance/SKILL.md): actionable peer-review rebuttal guidance (not full rebuttal prose) that matches the reviewer's mindset, recommends a response strategy for each weakness or question, and checks completeness.
 
 ## Reader curriculum
 

@@ -4,7 +4,7 @@ This repository welcomes issues, pull requests, and discussions. Please read thi
 
 ## Scope
 
-The current skill set contains eleven anchor skills under `skills/`: `idea-evaluator`, `deep-research`, `vibe-research-workflow`, `intro-drafter`, `paper-writer`, `tech-paper-template`, `benchmark-paper-template`, `paper-polish`, `figure-designer`, `drawio-reconstruction`, `pre-submission-reviewer`. Adding a new skill requires:
+The current skill set contains ten anchor skills under `skills/`: `idea-evaluator`, `deep-research`, `vibe-research-workflow`, `intro-drafter`, `paper-writer`, `tech-paper-template`, `benchmark-paper-template`, `paper-polish`, `figure-designer`, `pre-submission-reviewer`. Skills contributed and maintained by outside authors live in `others/` (currently `drawio-reconstruction` and `rebuttal-guidance`); the linter checks them with the same rules. Adding a new skill requires:
 
 1. Discussion via issue first; confirm the skill fills a real gap and is not covered by an existing skill.
 2. Clear attribution for any content not derived from `handbook/`.
@@ -12,7 +12,7 @@ The current skill set contains eleven anchor skills under `skills/`: `idea-evalu
 
 ## Authoring a skill
 
-Each skill directory at `skills/<name>/` contains:
+Each skill directory at `skills/<name>/` or `others/<name>/` contains:
 
 - `SKILL.md`, English, under 500 lines, with valid YAML frontmatter containing `name` and `description`.
 - `references/*.md`, on-demand depth. Files over 100 lines must begin with a table of contents.

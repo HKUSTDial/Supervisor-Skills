@@ -82,14 +82,14 @@ examples/data_sci2.drawio
 Install the directory that contains this `SKILL.md`, not the Supervisor-Skills repository root. With Codex, the most direct prompt is:
 
 ```text
-Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
+Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/others/drawio-reconstruction.
 ```
 
 For a manual user-level installation, copy or symlink this skill directory into a Codex skill discovery location:
 
 ```bash
 mkdir -p ~/.agents/skills
-ln -s /absolute/path/to/Supervisor-Skills/skills/drawio-reconstruction ~/.agents/skills/drawio-reconstruction
+ln -s /absolute/path/to/Supervisor-Skills/others/drawio-reconstruction ~/.agents/skills/drawio-reconstruction
 ```
 
 Codex also supports installer-managed and administrator-managed skill locations. The skill resolves helper scripts from its actual installed directory and does not require a fixed home-directory path. Then ask Codex to use `$drawio-reconstruction` for a diagram image or a folder of images. If a newly installed skill does not appear, restart Codex.

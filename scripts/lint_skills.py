@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Structural linter for Supervisor-Skills SKILL.md files.
+"""Structural linter for Supervisor-Skills SKILL.md files under skills/ and others/.
 
 Enforces the hard rules for SKILL.md structure:
  - SKILL.md body (after frontmatter) is at most 500 lines
@@ -28,7 +28,7 @@ except ModuleNotFoundError as exc:
         "PyYAML is required; run 'python -m pip install -r requirements-lint.txt'"
     ) from exc
 
-SKILL_ROOT = Path("skills")
+SKILL_ROOTS = (Path("skills"), Path("others"))
 
 EM_DASH = "\u2014"
 CJK = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\u3040-\u30ff\uac00-\ud7af]")
@@ -206,13 +206,15 @@ def main() -> int:
     repo_root = Path(__file__).resolve().parent.parent
     os.chdir(repo_root)
 
-    if not SKILL_ROOT.is_dir():
-        print(f"lint: SKILL_ROOT {SKILL_ROOT} does not exist; nothing to lint.")
-        return 0
-
-    skill_dirs = [p for p in sorted(SKILL_ROOT.iterdir()) if p.is_dir()]
+    skill_dirs = [
+        p
+        for root in SKILL_ROOTS
+        if root.is_dir()
+        for p in sorted(root.iterdir())
+        if p.is_dir()
+    ]
     if not skill_dirs:
-        print(f"lint: no skills under {SKILL_ROOT}; nothing to lint.")
+        print("lint: no skills under skills/ or others/; nothing to lint.")
         return 0
 
     all_errors: list[str] = []

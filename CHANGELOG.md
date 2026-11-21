@@ -6,6 +6,17 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- `rebuttal-guidance`, contributed by an outside author (2026-09-05).
+
+### Changed
+
+- Moved `drawio-reconstruction` and `rebuttal-guidance` from `skills/` to
+  `others/`, which holds skills contributed and maintained by outside
+  authors. `skills/` keeps the ten anchor skills. `scripts/lint_skills.py`
+  now checks both directories.
+
 ### Fixed
 
 - The `license` field in the SKILL.md frontmatter of six skills

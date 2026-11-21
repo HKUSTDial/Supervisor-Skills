@@ -83,14 +83,14 @@ examples/data_sci2.drawio
 应安装包含当前 `SKILL.md` 的目录，不要把 Supervisor-Skills 仓库根目录当成一个 skill 安装。使用 Codex 时，可直接发送：
 
 ```text
-Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/skills/drawio-reconstruction.
+Use $skill-installer to install https://github.com/HKUSTDial/Supervisor-Skills/tree/main/others/drawio-reconstruction.
 ```
 
 如需手动安装，可把这个 skill 目录复制或软链接到 Codex 的 skill 发现目录：
 
 ```bash
 mkdir -p ~/.agents/skills
-ln -s /absolute/path/to/Supervisor-Skills/skills/drawio-reconstruction ~/.agents/skills/drawio-reconstruction
+ln -s /absolute/path/to/Supervisor-Skills/others/drawio-reconstruction ~/.agents/skills/drawio-reconstruction
 ```
 
 Codex 也支持由 installer 或管理员管理的其他 skill 位置。本 skill 会根据实际安装目录定位辅助脚本，不依赖固定的 home 路径。之后让 Codex 对某张图或图片文件夹使用 `$drawio-reconstruction` 即可。如果新安装的 skill 没有出现，请重启 Codex。
