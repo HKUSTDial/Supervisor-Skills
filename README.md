@@ -12,10 +12,8 @@
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/stargazers"><img src="https://img.shields.io/github/stars/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/network/members"><img src="https://img.shields.io/github/forks/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub forks"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License"></a>
-</p>
-
-<p align="center">
-  Agent 替你推进研究时，<a href="https://github.com/HKUSTDial/Ducktor"><b>Ducktor</b></a> 把每一步背后的科研判断拆开讲给你。用 DeepSeek Harness 的，装 <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><b>DeepSeek-Ducktor</b></a>。
+  <a href="https://github.com/HKUSTDial/Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-Ducktor-f5a623?style=flat-square" alt="Ducktor"></a>
+  <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-DeepSeek--Ducktor-f5a623?style=flat-square" alt="DeepSeek-Ducktor"></a>
 </p>
 
 ## 📰 News

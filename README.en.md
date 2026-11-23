@@ -14,10 +14,8 @@ English · [中文](README.md)
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/stargazers"><img src="https://img.shields.io/github/stars/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/network/members"><img src="https://img.shields.io/github/forks/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub forks"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License"></a>
-</p>
-
-<p align="center">
-  While the agent moves your research forward, <a href="https://github.com/HKUSTDial/Ducktor"><b>Ducktor</b></a> takes apart the research judgment behind each step and explains it to you. On DeepSeek Harness, install <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><b>DeepSeek-Ducktor</b></a>.
+  <a href="https://github.com/HKUSTDial/Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-Ducktor-f5a623?style=flat-square" alt="Ducktor"></a>
+  <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-DeepSeek--Ducktor-f5a623?style=flat-square" alt="DeepSeek-Ducktor"></a>
 </p>
 
 ## 📰 News
