@@ -18,6 +18,10 @@ English · [中文](README.md)
   <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-DeepSeek--Ducktor-f5a623?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAMAAADM4ogkAAAAY1BMVEX%2F%2F%2F8AAAAAABERERFmZmZVVVUAERERABH%2F3SL%2F7iL%2F3RH%2FZhH%2FVREzd%2F9Ed%2F%2Fu3SIzZt3%2F%2F%2F%2Fd3e4iVapEiP8zZv9mZnf%2FMzMi%2F0R3ZmYRVSIRESIi%2FzMz%2F0Qz%2F1UR%2FzMRRCLz6zwzAAAAAXRSTlMAQObYZgAAASBJREFUOMu10916gjAMBuCGZrOCdbI%2Fuw3m7v8q9yXUahUjJ34PB8W%2BJG1B50oIcQsC1iyh5BmyUWxrap5EPq%2BgTSmVPDNKNsGSNMWTl%2FaGC0im5iIVZuosGHJk17chqqxhVLa4wfgG7LrNEQZvw27ThrNlGr1Dm5mzQ2Xb03PHo72GVWf1cYtcyZdQh1xUeCmpQloYKJJKcqeTraCcqROpeie14wWcamln6vtee%2B%2Bc8NJ6fdqKvh389JolufOF1otEQXRDzbf4Lo2rL3E%2B2w8qp8qST7aiS2He7zkETsmSCr%2F4bgT6JXkU%2FP7Rm6RXHvmU5ioOOjv%2BYjYN6ZDSOA9HGa9AMTtI4WG%2B4p8MD1J4EIOafnrgwbteJOn%2B11P%2B5f%2FL6xRwyjhAZAAAAABJRU5ErkJggg%3D%3D" alt="DeepSeek-Ducktor"></a>
 </p>
 
+<p align="center">
+  Want the agent you use every day to work with Supervisor-Skills and explain the research judgment behind each step? Check out <a href="https://github.com/HKUSTDial/Ducktor"><b>Ducktor</b></a> / <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><b>DeepSeek-Ducktor</b></a>.
+</p>
+
 ## 📰 News
 
 > - **[2026-11-05]** 🚀 **The complete agent-native form of Supervisor-Skills is here!** **[Ducktor](https://github.com/HKUSTDial/Ducktor)** (Claude Code / Codex) and **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)** are released! Built on Supervisor-Skills, they go from "calling one Skill by hand" to a native plugin that stays with you the whole way: type `/duck on` once, and the agent not only works for you with a seasoned advisor's research methods, but also explains the research judgment behind each step. The agent gets more useful, and you are no longer "the one who only clicks to confirm".
