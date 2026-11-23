@@ -16,6 +16,10 @@ English · [中文](README.md)
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License"></a>
 </p>
 
+<p align="center">
+  While the agent moves your research forward, <a href="https://github.com/HKUSTDial/Ducktor"><b>Ducktor</b></a> takes apart the research judgment behind each step and explains it to you. On DeepSeek Harness, install <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><b>DeepSeek-Ducktor</b></a>.
+</p>
+
 ## 📰 News
 
 > - **[2026-11-05]** 🚀 **The complete agent-native form of Supervisor-Skills is here!** **[Ducktor](https://github.com/HKUSTDial/Ducktor)** (Claude Code / Codex) and **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)** are released! Built on Supervisor-Skills, they go from "calling one Skill by hand" to a native plugin that stays with you the whole way: type `/duck on` once, and the agent not only works for you with a seasoned advisor's research methods, but also explains the research judgment behind each step. The agent gets more useful, and you are no longer "the one who only clicks to confirm".

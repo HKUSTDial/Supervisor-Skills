@@ -14,6 +14,10 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License"></a>
 </p>
 
+<p align="center">
+  Agent 替你推进研究时，<a href="https://github.com/HKUSTDial/Ducktor"><b>Ducktor</b></a> 把每一步背后的科研判断拆开讲给你。用 DeepSeek Harness 的，装 <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><b>DeepSeek-Ducktor</b></a>。
+</p>
+
 ## 📰 News
 
 > - **[2026-11-05]** 🚀 **Supervisor-Skills 的 Agent 原生完全体来了！** **[Ducktor](https://github.com/HKUSTDial/Ducktor)**（Claude Code / Codex）与 **[DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)** 正式发布！它以 Supervisor-Skills 为底座，从“手动调单个 Skill”升级为全程陪伴的原生插件：只需敲一次 `/duck on`，Agent 不仅能带着博导的科研方法论替你干活，还会把每一步背后的科研判断讲给你听——既让 Agent 更好用，又让你不沦为“只点确认的工具人”。
