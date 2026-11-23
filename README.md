@@ -12,8 +12,8 @@
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/stargazers"><img src="https://img.shields.io/github/stars/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub stars"></a>
   <a href="https://github.com/HKUSTDial/Supervisor-Skills/network/members"><img src="https://img.shields.io/github/forks/HKUSTDial/Supervisor-Skills?style=flat-square&logo=github" alt="GitHub forks"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-lightgrey?style=flat-square" alt="License"></a>
-  <a href="https://github.com/HKUSTDial/Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-Ducktor-f5a623?style=flat-square" alt="Ducktor"></a>
-  <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-DeepSeek--Ducktor-f5a623?style=flat-square" alt="DeepSeek-Ducktor"></a>
+  <a href="https://github.com/HKUSTDial/Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-Ducktor-f5a623?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACAAAAAoCAMAAACo9wirAAAAjVBMVEX%2F%2F%2F8AAAAREREAEREAABFEREQRABFVVVVVVUT%2F3SIRAAAiIiL%2F3RHuzCIiIhEzMxGZiBH%2FVRH%2FZhHuzBH%2FzBH%2F7hGZmSL%2FzCIzMwBmZmZmVVVmZlWId1VVd2b%2FRCL%2FRDNVRFUz%2F0Qz7kRVZlURESIRIiJV%2F1VE7lUi%2FzNE%2F1VE%2F0Qz%2FzMiESIiEREidyLx1Gy0AAAAAXRSTlMAQObYZgAAAZtJREFUOMt9VA1XgzAMJDdmjRZ182Oy%2BVXtnG7T%2F%2F%2FzTNKCPCke70Fee7nkUqCqhiCiahqYUS0MYIpA83mtDEE9QTkhd2ocLjOswnym97NiL1n%2FfE7kSwTy3oO0RFX5Qg1q2MvVmFWmkgBfXIoIX1FVey7UZ1%2FDK6iS%2BC9hsVwsfNOoghBm182owHK5YJZt0SmPW8ej%2Bnyj%2BygdCt0age90GB71WMIPwONJDPdXzONZpg48W3bDGBFSLq20jdoXZk1qURjaoefZ2IXY5MSRx%2F1wP51yPuv%2BmaCJrVtv2vWDWz%2B6AuRcnHt63jC3L%2BF1kvDmWnYuTCi07j8IIRqAqJdhK8E2LyvBlqGUHMQOEgkBFuCXhxRbgioA72khbOPONhA%2FZOEz7DtCPGjSezwJuxDDNuwRjgeEECTRetAK%2BAoIUAKOkBuUAKQeDkgu9p%2B7o6SpwncwhdQkBjZhPVof5tR66H0lP3k7PdDb7Kwmj9lyN6heYTiizOl7iH1ON%2FMkJd9p30NXAehoAnllKA6nnG103Dp%2FdKNXjfqf2Q%2BJqjSZoCHuLwAAAABJRU5ErkJggg%3D%3D" alt="Ducktor"></a>
+  <a href="https://github.com/HKUSTDial/DeepSeek-Ducktor"><img src="https://img.shields.io/badge/Agent%20plugin-DeepSeek--Ducktor-f5a623?style=flat-square&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAMAAADM4ogkAAAAY1BMVEX%2F%2F%2F8AAAAAABERERFmZmZVVVUAERERABH%2F3SL%2F7iL%2F3RH%2FZhH%2FVREzd%2F9Ed%2F%2Fu3SIzZt3%2F%2F%2F%2Fd3e4iVapEiP8zZv9mZnf%2FMzMi%2F0R3ZmYRVSIRESIi%2FzMz%2F0Qz%2F1UR%2FzMRRCLz6zwzAAAAAXRSTlMAQObYZgAAASBJREFUOMu10916gjAMBuCGZrOCdbI%2Fuw3m7v8q9yXUahUjJ34PB8W%2BJG1B50oIcQsC1iyh5BmyUWxrap5EPq%2BgTSmVPDNKNsGSNMWTl%2FaGC0im5iIVZuosGHJk17chqqxhVLa4wfgG7LrNEQZvw27ThrNlGr1Dm5mzQ2Xb03PHo72GVWf1cYtcyZdQh1xUeCmpQloYKJJKcqeTraCcqROpeie14wWcamln6vtee%2B%2Bc8NJ6fdqKvh389JolufOF1otEQXRDzbf4Lo2rL3E%2B2w8qp8qST7aiS2He7zkETsmSCr%2F4bgT6JXkU%2FP7Rm6RXHvmU5ioOOjv%2BYjYN6ZDSOA9HGa9AMTtI4WG%2B4p8MD1J4EIOafnrgwbteJOn%2B11P%2B5f%2FL6xRwyjhAZAAAAABJRU5ErkJggg%3D%3D" alt="DeepSeek-Ducktor"></a>
 </p>
 
 ## 📰 News
@@ -215,6 +215,10 @@ Help me install Supervisor-Skills from https://github.com/HKUSTDial/Supervisor-S
 ### 🎓 Ducktor 与 DeepSeek-Ducktor：Agent 原生的科研导师
 
 Ducktor 是 Supervisor 系列的续作。Agent 替你推进研究时，Ducktor 把每一步拆开讲给你：这一步做了什么判断、常见做法和有经验的人会怎么想、什么条件下这个判断不成立。决策和带得走的原则记进项目里的 `.duck/`；敲 `/duck-learn` 复盘一段工作，敲 `/duck-why` 追问某一步为什么这样做。
+
+<p align="center">
+  <a href="https://github.com/HKUSTDial/Ducktor"><img src="https://raw.githubusercontent.com/HKUSTDial/Ducktor/main/assets/before-after.zh-CN.png" width="880" alt="示意图，不是录屏。标题：Agent 负责完成科研；Ducktor 想和你一起学习科研。同一句话：「实验都做完了，结果在 results/ 里。帮我写成一篇 NeurIPS 论文。」左边没装 Ducktor：AI 读完结果，写了 335 行 paper/main.tex，说都做完了。右边分三步：/duck-outline 讲贡献写的是「只用注意力，不用循环和卷积」，删掉这一条，论文的主张就变；/duck-write 讲基线的训练成本取自各家论文，算法可能和我们不同，所以正文写「estimated」「about 2.9×」，原则「用词的强弱，跟着证据的强弱走」记进笔记本；/duck-review 讲英德上 big 比 base 高 1.1，可参数、步数和 dropout 一起变了，这 1.1 算不到哪一处上，下次先做一组只改一处的对照。"></a>
+</p>
 
 - [Ducktor](https://github.com/HKUSTDial/Ducktor)：Claude Code 和 Codex 的插件（Codex 里命令写成 `$duck:duck-learn` 这样）；Cursor、Gemini CLI 等可以复制它的 AGENTS.md 使用。
 - [DeepSeek-Ducktor](https://github.com/HKUSTDial/DeepSeek-Ducktor)：DeepSeek Harness 的原生插件，命令和规则与 Ducktor 一致。
